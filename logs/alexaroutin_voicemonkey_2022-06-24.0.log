@@ -1,0 +1,1358 @@
+2022-06-24 14:58:44,800 1319 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 11668 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 14:58:44,802 1321 [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 14:58:44,803 1322 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 14:58:47,077 3596 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 14:58:47,124 3643 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 14:58:47,404 3923 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.123 seconds (JVM running for 5.502)
+2022-06-24 14:59:00,007 16526 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:00:05,000 657  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 27076 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 15:00:05,002 659  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 15:00:05,002 659  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 15:00:06,742 2399 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 15:00:06,771 2428 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 15:00:07,014 2671 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 2.386 seconds (JVM running for 3.379)
+2022-06-24 15:01:00,006 55663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:01:00,008 55665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:02:00,016 115673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:02:00,016 115673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:03:00,004 175661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:03:00,004 175661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:04:00,000 235657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:04:00,003 235660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:05:00,002 295659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:05:00,003 295660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:06:00,005 355662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:06:00,007 355664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:07:00,002 415659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:07:00,003 415660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:08:00,009 475666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:08:00,010 475667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:09:00,015 535672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:09:00,015 535672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:10:00,009 595666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:10:00,010 595667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:11:00,005 655662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:11:00,009 655666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:12:00,009 715666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:12:00,010 715667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:13:00,004 775661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:13:00,005 775662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:14:00,006 835663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:14:00,007 835664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:15:00,010 895667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:15:00,012 895669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:16:00,014 955671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:16:00,017 955674 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:17:00,014 1015671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:17:00,015 1015672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:18:00,004 1075661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:18:00,004 1075661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:19:00,007 1135664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:19:00,007 1135664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:20:00,011 1195668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 15:20:02,380 1198037 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:20:02,381 1198038 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:21:00,000 1255657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:21:00,000 1255657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:22:00,012 1315669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:22:00,013 1315670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:23:00,009 1375666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:23:00,009 1375666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:24:00,005 1435662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:24:00,007 1435664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:25:00,000 1495657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:25:00,000 1495657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:26:00,015 1555672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:26:00,015 1555672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:27:00,008 1615665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:27:00,009 1615666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:28:00,009 1675666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:28:00,010 1675667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:29:00,002 1735659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:29:00,004 1735661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:30:00,009 1795666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:30:00,011 1795668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:31:00,012 1855669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:31:00,013 1855670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:32:00,003 1915660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:32:00,004 1915661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:33:00,006 1975663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:33:00,008 1975665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:34:00,010 2035667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:34:00,012 2035669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:35:00,011 2095668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:35:00,011 2095668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:36:00,002 2155659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:36:00,004 2155661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:37:00,012 2215669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:37:00,014 2215671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:38:00,013 2275670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:38:00,015 2275672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:39:00,008 2335665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:39:00,009 2335666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:40:00,011 2395668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:40:00,011 2395668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:40:00,011 2395668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 15:41:00,007 2455664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:41:00,009 2455666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:42:00,006 2515663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:42:00,009 2515666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:43:00,005 2575662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:43:00,007 2575664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:44:00,002 2635659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:44:00,003 2635660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:45:00,005 2695662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:45:00,007 2695664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:46:00,009 2755666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:46:00,010 2755667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:47:00,012 2815669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:47:00,014 2815671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:48:00,012 2875669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:48:00,012 2875669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:49:00,005 2935662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:49:00,006 2935663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:50:00,007 2995664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:50:00,007 2995664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:51:00,003 3055660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:51:00,003 3055660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:52:00,007 3115664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:52:00,007 3115664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:53:00,013 3175670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:53:00,015 3175672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:54:00,016 3235673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:54:00,016 3235673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:55:00,012 3295669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:55:00,013 3295670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:56:00,009 3355666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:56:00,011 3355668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:57:00,015 3415672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:57:00,015 3415672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:58:00,006 3475663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 15:58:00,007 3475664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:59:00,011 3535668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 15:59:00,011 3535668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:00:00,013 3595670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing time
+2022-06-24 16:00:01,633 3597290 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 16:00:02,178 3597835 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:00:02,178 3597835 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:01:00,008 3655665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:01:00,008 3655665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:02:00,014 3715671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:02:00,014 3715671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:03:00,010 3775667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:03:00,010 3775667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:04:00,008 3835665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:04:00,009 3835666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:05:00,014 3895671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:05:00,015 3895672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:06:00,008 3955665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:06:00,009 3955666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:07:00,009 4015666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:07:00,009 4015666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:08:00,010 4075667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:08:00,010 4075667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:09:00,008 4135665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:09:00,008 4135665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:10:00,013 4195670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:10:00,014 4195671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:11:00,001 4255658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:11:00,001 4255658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:12:00,012 4315669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:12:00,013 4315670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:13:00,012 4375669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:13:00,012 4375669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:14:00,011 4435668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:14:00,011 4435668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:15:00,002 4495659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing date
+2022-06-24 16:15:01,499 4497156 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:15:01,499 4497156 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:16:00,005 4555662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:16:00,007 4555664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:17:00,011 4615668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:17:00,013 4615670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:18:00,012 4675669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:18:00,014 4675671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:19:00,002 4735659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:19:00,003 4735660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:20:00,002 4795659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:20:00,003 4795660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:20:00,003 4795660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 16:21:00,001 4855658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:21:00,002 4855659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:22:00,006 4915663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:22:00,007 4915664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:23:00,014 4975671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:23:00,015 4975672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:24:00,009 5035666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:24:00,009 5035666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:25:00,007 5095664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:25:00,007 5095664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:26:00,007 5155664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:26:00,007 5155664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:27:00,003 5215660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:27:00,004 5215661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:28:00,002 5275659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:28:00,003 5275660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:29:00,000 5335657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:29:00,001 5335658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:30:00,008 5395665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:30:00,008 5395665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:31:00,015 5455672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:31:00,015 5455672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:32:00,006 5515663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:32:00,007 5515664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:33:00,007 5575664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:33:00,007 5575664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:34:00,007 5635664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:34:00,008 5635665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:35:00,005 5695662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:35:00,006 5695663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:36:00,002 5755659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:36:00,003 5755660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:37:00,004 5815661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:37:00,005 5815662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:38:00,007 5875664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:38:00,008 5875665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:39:00,009 5935666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:39:00,009 5935666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:40:00,006 5995663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 16:40:01,504 5997161 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:40:01,505 5997162 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:41:00,014 6055671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:41:00,016 6055673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:42:00,001 6115658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:42:00,001 6115658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:43:00,007 6175664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:43:00,007 6175664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:44:00,009 6235666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:44:00,011 6235668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:45:00,013 6295670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:45:00,014 6295671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:46:00,008 6355665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:46:00,009 6355666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:47:00,007 6415664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:47:00,007 6415664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:48:00,014 6475671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:48:00,015 6475672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:49:00,013 6535670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:49:00,013 6535670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:50:00,002 6595659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:50:00,002 6595659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:51:00,009 6655666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:51:00,010 6655667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:52:00,014 6715671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:52:00,015 6715672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:53:00,005 6775662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:53:00,006 6775663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:54:00,001 6835658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:54:00,002 6835659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:55:00,006 6895663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:55:00,007 6895664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:56:00,008 6955665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:56:00,008 6955665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:57:00,011 7015668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:57:00,011 7015668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:58:00,004 7075661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 16:58:00,004 7075661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:59:00,003 7135660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 16:59:00,003 7135660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:00:00,007 7195664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing time
+2022-06-24 17:00:01,326 7196983 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:00:01,326 7196983 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:00:01,326 7196983 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 17:01:00,000 7255657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:01:00,005 7255662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:02:00,003 7315660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:02:00,003 7315660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:03:00,008 7375665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:03:00,008 7375665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:04:00,007 7435664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:04:00,007 7435664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:05:00,011 7495668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:05:00,011 7495668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:06:00,012 7555669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:06:00,012 7555669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:07:00,005 7615662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:07:00,006 7615663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:08:00,007 7675664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:08:00,008 7675665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:09:00,005 7735662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:09:00,006 7735663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:10:00,014 7795671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:10:00,014 7795671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:11:00,007 7855664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:11:00,007 7855664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:12:00,006 7915663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:12:00,006 7915663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:13:00,010 7975667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:13:00,010 7975667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:14:00,011 8035668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:14:00,013 8035670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:15:00,008 8095665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:15:00,008 8095665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:16:00,004 8155661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:16:00,005 8155662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:17:00,014 8215671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:17:00,014 8215671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:18:00,005 8275662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:18:00,005 8275662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:19:00,013 8335670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:19:00,014 8335671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:20:00,015 8395672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 17:20:01,423 8397080 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:20:01,423 8397080 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:21:00,015 8455672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:21:00,015 8455672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:22:00,015 8515672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:22:00,015 8515672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:23:00,004 8575661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:23:00,005 8575662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:24:00,002 8635659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:24:00,003 8635660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:25:00,003 8695660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:25:00,003 8695660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:26:00,004 8755661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:26:00,005 8755662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:27:00,002 8815659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:27:00,003 8815660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:28:00,010 8875667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:28:00,010 8875667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:29:00,008 8935665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:29:00,008 8935665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:30:00,004 8995661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:30:00,005 8995662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:31:00,014 9055671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:31:00,016 9055673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:32:00,002 9115659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:32:00,003 9115660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:33:00,008 9175665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:33:00,009 9175666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:34:00,009 9235666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:34:00,009 9235666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:35:00,010 9295667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:35:00,010 9295667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:36:00,009 9355666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:36:00,010 9355667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:37:00,006 9415663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:37:00,006 9415663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:38:00,003 9475660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:38:00,004 9475661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:39:00,007 9535664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:39:00,008 9535665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:40:00,009 9595666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:40:00,009 9595666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 17:40:01,993 9597650 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:41:00,007 9655664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:41:00,007 9655664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:42:00,003 9715660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:42:00,004 9715661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:43:00,005 9775662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:43:00,006 9775663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:44:00,004 9835661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:44:00,005 9835662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:45:00,002 9895659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:45:00,002 9895659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:46:00,003 9955660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:46:00,003 9955660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:47:00,007 10015664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:47:00,007 10015664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:48:00,004 10075661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:48:00,004 10075661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:49:00,006 10135663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:49:00,007 10135664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:50:00,002 10195659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:50:00,003 10195660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:51:00,012 10255669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:51:00,012 10255669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:52:00,005 10315662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:52:00,006 10315663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:53:00,013 10375670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:53:00,014 10375671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:54:00,016 10435673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:54:00,016 10435673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:55:00,008 10495665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:55:00,010 10495667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:56:00,009 10555666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:56:00,009 10555666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:57:00,002 10615659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:57:00,002 10615659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:58:00,001 10675658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 17:58:00,013 10675670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:59:00,015 10735672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing tvOnOff
+2022-06-24 17:59:00,015 10735672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:00:00,005 10795662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing time
+2022-06-24 18:00:01,702 10797359 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:00:01,702 10797359 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 18:01:00,005 10855662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:02:00,010 10915667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:03:00,013 10975670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:04:00,011 11035668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:05:00,003 11095660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:06:00,005 11155662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:07:00,012 11215669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:08:00,010 11275667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:09:00,008 11335665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:10:00,015 11395672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:11:00,017 11455674 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:12:00,011 11515668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:13:00,010 11575667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:14:00,006 11635663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:15:00,009 11695666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:16:00,010 11755667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:17:00,003 11815660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:18:00,009 11875666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:19:00,015 11935672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:20:00,014 11995671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:20:00,014 11995671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 18:21:00,012 12055669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:22:00,003 12115660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:23:00,011 12175668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:24:00,000 12235657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:25:00,012 12295669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:26:00,005 12355662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:27:00,004 12415661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:28:00,006 12475663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:29:00,015 12535672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:30:00,016 12595673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:31:00,013 12655670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:32:00,009 12715666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:33:00,015 12775672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:34:00,011 12835668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:35:00,014 12895671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:36:00,005 12955662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:37:00,002 13015659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:38:00,014 13075671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:39:00,002 13135659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:40:00,003 13195660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:40:00,003 13195660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 18:41:00,002 13255659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:42:00,009 13315666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:43:00,009 13375666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:44:00,014 13435671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:45:00,001 13495658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:46:00,010 13555667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:47:00,015 13615672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:48:00,001 13675658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:49:00,010 13735667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:50:00,007 13795664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:51:00,012 13855669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:52:00,002 13915659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:53:00,005 13975662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:54:00,012 14035669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:55:00,005 14095662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:56:00,010 14155667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:57:00,011 14215668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:58:00,014 14275671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 18:59:00,011 14335668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:00:00,015 14395672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing time
+2022-06-24 19:00:01,743 14397400 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:00:01,743 14397400 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 19:01:00,005 14455662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:02:00,009 14515666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:03:00,006 14575663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:04:00,002 14635659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:05:00,003 14695660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:06:00,015 14755672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:07:00,003 14815660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:08:00,012 14875669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:09:00,006 14935663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:10:00,010 14995667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:11:00,012 15055669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:12:00,008 15115665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:13:00,009 15175666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:14:00,005 15235662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:15:00,011 15295668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:15:00,011 15295668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing date
+2022-06-24 19:16:00,013 15355670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:17:00,008 15415665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:18:00,007 15475664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:19:00,007 15535664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:20:00,003 15595660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:20:00,004 15595661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 19:21:00,009 15655666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:22:00,016 15715673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:23:00,010 15775667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:24:00,007 15835664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:25:00,015 15895672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:26:00,010 15955667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:27:00,015 16015672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:28:00,016 16075673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:29:00,010 16135667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:30:00,009 16195666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:31:00,011 16255668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:32:00,012 16315669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:33:00,013 16375670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:34:00,003 16435660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:35:00,006 16495663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:36:00,010 16555667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:37:00,010 16615667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:38:00,009 16675666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:39:00,008 16735665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:40:00,001 16795658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 19:40:01,990 16797647 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:41:00,002 16855659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:42:00,000 16915657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:43:00,004 16975661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:44:00,001 17035658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:45:00,009 17095666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:46:00,003 17155660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:47:00,003 17215660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:48:00,012 17275669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:49:00,012 17335669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:50:00,007 17395664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:51:00,013 17455670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:52:00,012 17515669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:53:00,003 17575660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:54:00,002 17635659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:55:00,003 17695660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:56:00,008 17755665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:57:00,016 17815673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:58:00,005 17875662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 19:59:00,008 17935665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:00:00,011 17995668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing time
+2022-06-24 20:00:00,925 17996582 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 20:00:01,404 17997061 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:01:00,001 18055658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:02:00,011 18115668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:03:00,015 18175672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:04:00,012 18235669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:05:00,001 18295658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:06:00,013 18355670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:07:00,012 18415669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:08:00,014 18475671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:09:00,005 18535662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:10:00,009 18595666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:11:00,007 18655664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:12:00,010 18715667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:13:00,009 18775666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:14:00,013 18835670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:15:00,016 18895673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:16:00,015 18955672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:17:00,001 19015658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:18:00,010 19075667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:19:00,013 19135670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:20:00,010 19195667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 20:20:01,546 19197203 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:21:00,004 19255661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:22:00,000 19315657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:23:00,009 19375666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:24:00,000 19435657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:25:00,007 19495664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:26:00,002 19555659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:27:00,005 19615662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:28:00,008 19675665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:29:00,006 19735663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:30:00,011 19795668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:31:00,009 19855666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:32:00,010 19915667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:33:00,003 19975660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:34:00,006 20035663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:35:00,013 20095670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:36:00,006 20155663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:37:00,006 20215663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:38:00,010 20275667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:39:00,003 20335660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:40:00,006 20395663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:40:00,008 20395665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 20:41:00,001 20455658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:42:00,001 20515658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:43:00,015 20575672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:44:00,010 20635667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:45:00,013 20695670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:46:00,007 20755664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:47:00,005 20815662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:48:00,013 20875670 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:49:00,005 20935662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:50:00,004 20995661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:51:00,006 21055663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:52:00,000 21115657 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:53:00,006 21175663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:54:00,016 21235673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:55:00,008 21295665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:56:00,016 21355673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:57:00,004 21415661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:58:00,015 21475672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 20:59:00,011 21535668 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:00:00,008 21595665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 21:00:00,956 21596613 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:00:00,956 21596613 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing time
+2022-06-24 21:01:00,005 21655662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:02:00,014 21715671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:03:00,010 21775667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:04:00,010 21835667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:05:00,005 21895662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:06:00,004 21955661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:07:00,001 22015658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:08:00,015 22075672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:09:00,010 22135667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:10:00,001 22195658 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:11:00,003 22255660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:12:00,003 22315660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:13:00,016 22375673 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:14:00,010 22435667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:15:00,006 22495663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:16:00,009 22555666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:17:00,010 22615667 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:18:00,004 22675661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:19:00,004 22735661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:20:00,007 22795664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:20:00,007 22795664 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 21:21:00,012 22855669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:22:00,006 22915663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:23:00,005 22975662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:24:00,004 23035661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:25:00,003 23095660 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:26:00,012 23155669 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:27:00,015 23215672 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:28:00,006 23275663 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:29:00,009 23335666 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:30:00,008 23395665 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:31:00,005 23455662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:32:00,002 23515659 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:33:00,004 23575661 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:34:00,005 23635662 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:35:00,014 23695671 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:35:48,296 673  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 34660 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:35:48,298 675  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:35:48,298 675  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:35:50,094 2471 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 21:35:50,130 2507 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 21:35:50,397 2774 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 2.465 seconds (JVM running for 3.598)
+2022-06-24 21:36:00,011 12388 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:36:00,947 13324 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "https://www.bvirtuoso.com/getPeopleInfo": java.security.cert.CertificateException: No subject alternative DNS name matching www.bvirtuoso.com found.; nested exception is javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No subject alternative DNS name matching www.bvirtuoso.com found.
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.bvirtuoso.hari.api.ApiInvoker.invokeVoiceMonkeyApi(ApiInvoker.java:25)
+	at com.bvirtuoso.hari.api.ApiInvoker$invokeVoiceMonkeyApi.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at com.bvirtuoso.hari.controller.InvokeAlexaRoutineScheduler.heartBeat(InvokeAlexaRoutineScheduler.groovy:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No subject alternative DNS name matching www.bvirtuoso.com found.
+	at sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:370)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:313)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:308)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:652)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:471)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:367)
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:376)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:479)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:457)
+	at sun.security.ssl.TransportContext.dispatch(TransportContext.java:200)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:155)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1315)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1228)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:384)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:587)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:197)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:167)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 common frames omitted
+Caused by: java.security.cert.CertificateException: No subject alternative DNS name matching www.bvirtuoso.com found.
+	at sun.security.util.HostnameChecker.matchDNS(HostnameChecker.java:219)
+	at sun.security.util.HostnameChecker.match(HostnameChecker.java:101)
+	at sun.security.ssl.X509TrustManagerImpl.checkIdentity(X509TrustManagerImpl.java:441)
+	at sun.security.ssl.X509TrustManagerImpl.checkIdentity(X509TrustManagerImpl.java:409)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:228)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:128)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:636)
+	... 40 common frames omitted
+2022-06-24 21:36:47,241 717  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 14940 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:36:47,243 719  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:36:47,243 719  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:36:49,030 2506 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 21:36:49,061 2537 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 21:36:49,310 2786 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 2.447 seconds (JVM running for 3.718)
+2022-06-24 21:37:00,008 13484 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:37:00,528 14004 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - null
+2022-06-24 21:37:34,966 836  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 5048 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:37:34,969 839  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:37:34,969 839  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:37:37,338 3208 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 21:37:51,945 17815 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 21:37:52,432 18302 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 17.947 seconds (JVM running for 19.173)
+2022-06-24 21:38:00,011 25881 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:38:45,464 71334 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - null
+2022-06-24 21:41:56,394 1113 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 31344 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:41:56,397 1116 [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:41:56,397 1116 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:41:59,084 3803 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 21:42:02,841 7560 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 21:42:03,201 7920 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 7.394 seconds (JVM running for 9.01)
+2022-06-24 21:43:02,219 66938 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:43:16,016 80735 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - null
+2022-06-24 21:52:04,201 919  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 15424 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:52:04,203 921  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:52:04,204 922  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:52:06,463 3181 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 21:52:06,499 3217 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 21:52:06,820 3538 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.102 seconds (JVM running for 4.515)
+2022-06-24 21:53:00,012 56730 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:53:34,978 91696 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [{name=hari, weight=0.0, note=feeling well}, {name=hari, weight=0.0, note=feeling clumsy}, {name=hari, weight=0.0, note=very happy today}, {name=hari, weight=0.0, note=feeling good}, {name=hari, weight=0.0, note=had a long call}, {name=hari, weight=0.0, note=nothing done}, {name=hari, weight=0.0, note=better today}, {name=hari, weight=0.0, note=how many ways}, {name=hari, weight=66.0, note=null}]
+2022-06-24 21:54:33,864 855  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 23064 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:54:33,866 857  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:54:33,866 857  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:54:36,119 3110 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 21:54:36,163 3154 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 21:54:36,457 3448 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.066 seconds (JVM running for 4.459)
+2022-06-24 21:55:00,013 27004 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:55:56,645 83636 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [{name=hari, weight=0.0, note=feeling well}, {name=hari, weight=0.0, note=feeling clumsy}, {name=hari, weight=0.0, note=very happy today}, {name=hari, weight=0.0, note=feeling good}, {name=hari, weight=0.0, note=had a long call}, {name=hari, weight=0.0, note=nothing done}, {name=hari, weight=0.0, note=better today}, {name=hari, weight=0.0, note=how many ways}, {name=hari, weight=66.0, note=null}]
+2022-06-24 21:55:56,644 83635 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s384ms653µs300ns).
+2022-06-24 21:57:35,089 1025 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 24564 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:57:35,092 1028 [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:57:35,092 1028 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:57:37,705 1037 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 34188 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 21:57:37,707 1039 [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 21:57:37,708 1040 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 21:57:37,780 3716 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 21:57:37,817 3753 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 21:57:38,091 4027 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.652 seconds (JVM running for 4.863)
+2022-06-24 21:57:40,234 3566 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:206)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:182)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:178)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.springframework.boot.SpringApplication$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.bvirtuoso.hari.AlexaRoutineVoiceMonkeyApplication.main(AlexaRoutineVoiceMonkeyApplication.groovy:12)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Hari/Personal/projects/Experiments/AlexaApisInvoker/alexaroutin_voicemonkey/data/healthInfo.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	... 64 common frames omitted
+2022-06-24 21:57:40,237 3569 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:206)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:182)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:178)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.springframework.boot.SpringApplication$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.bvirtuoso.hari.AlexaRoutineVoiceMonkeyApplication.main(AlexaRoutineVoiceMonkeyApplication.groovy:12)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Hari/Personal/projects/Experiments/AlexaApisInvoker/alexaroutin_voicemonkey/data/healthInfo.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	... 64 common frames omitted
+2022-06-24 21:57:40,239 3571 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-06-24 21:57:40,239 3571 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-06-24 21:57:40,268 3600 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.springframework.boot.SpringApplication$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.bvirtuoso.hari.AlexaRoutineVoiceMonkeyApplication.main(AlexaRoutineVoiceMonkeyApplication.groovy:12)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:178)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 20 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 37 common frames omitted
+2022-06-24 21:58:00,001 25937 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:58:00,575 26511 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.web.client.RestClientException: Error while extracting response for type [class com.bvirtuoso.hari.model.jpa.HealthInfoJpa] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:120)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:191)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at com.bvirtuoso.hari.api.ApiInvoker.getPersonInfo(ApiInvoker.groovy:41)
+	at com.bvirtuoso.hari.api.ApiInvoker$getPersonInfo.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at com.bvirtuoso.hari.controller.InvokeAlexaRoutineScheduler.heartBeat(InvokeAlexaRoutineScheduler.groovy:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:389)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:342)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	... 35 common frames omitted
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1462)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:638)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:210)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:186)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4675)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3683)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:378)
+	... 37 common frames omitted
+2022-06-24 21:59:00,005 85941 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 21:59:00,448 86384 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.web.client.RestClientException: Error while extracting response for type [class com.bvirtuoso.hari.model.jpa.HealthInfoJpa] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:120)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:191)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at com.bvirtuoso.hari.api.ApiInvoker.getPersonInfo(ApiInvoker.groovy:41)
+	at com.bvirtuoso.hari.api.ApiInvoker$getPersonInfo.call(Unknown Source)
+	at com.bvirtuoso.hari.controller.InvokeAlexaRoutineScheduler.heartBeat(InvokeAlexaRoutineScheduler.groovy:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:389)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:342)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	... 30 common frames omitted
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1462)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:638)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:210)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:186)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4675)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3683)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:378)
+	... 32 common frames omitted
+2022-06-24 22:00:00,012 145948 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing drink water
+2022-06-24 22:00:02,068 148004 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Announcing time
+2022-06-24 22:00:03,016 148952 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 22:00:03,451 149387 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.web.client.RestClientException: Error while extracting response for type [class com.bvirtuoso.hari.model.jpa.HealthInfoJpa] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:120)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:191)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at com.bvirtuoso.hari.api.ApiInvoker.getPersonInfo(ApiInvoker.groovy:41)
+	at com.bvirtuoso.hari.api.ApiInvoker$getPersonInfo.call(Unknown Source)
+	at com.bvirtuoso.hari.controller.InvokeAlexaRoutineScheduler.heartBeat(InvokeAlexaRoutineScheduler.groovy:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:389)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:342)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	... 30 common frames omitted
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.bvirtuoso.hari.model.jpa.HealthInfoJpa` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1462)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:638)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:210)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:186)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4675)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3683)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:378)
+	... 32 common frames omitted
+2022-06-24 22:00:31,476 804  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 13776 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:00:31,479 807  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:00:31,479 807  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:00:33,582 2910 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 22:00:33,619 2947 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 22:00:33,940 3268 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 2.92 seconds (JVM running for 4.211)
+2022-06-24 22:01:00,011 29339 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 22:01:30,586 59914 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [{name=hari, weight=0.0, note=feeling well}, {name=hari, weight=0.0, note=feeling clumsy}, {name=hari, weight=0.0, note=very happy today}, {name=hari, weight=0.0, note=feeling good}, {name=hari, weight=0.0, note=had a long call}, {name=hari, weight=0.0, note=nothing done}, {name=hari, weight=0.0, note=better today}, {name=hari, weight=0.0, note=how many ways}, {name=hari, weight=66.0, note=null}]
+2022-06-24 22:04:14,346 798  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 28852 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:04:14,348 800  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:04:14,348 800  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:04:31,024 17476 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 22:04:31,071 17523 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 22:04:31,419 17871 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 17.531 seconds (JVM running for 18.73)
+2022-06-24 22:05:00,005 46457 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Beating
+2022-06-24 22:05:20,549 67001 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.PersonInfo@4e5362cd, com.bvirtuoso.hari.model.PersonInfo@56488dc2, com.bvirtuoso.hari.model.PersonInfo@43054948, com.bvirtuoso.hari.model.PersonInfo@325127a9, com.bvirtuoso.hari.model.PersonInfo@67416e24, com.bvirtuoso.hari.model.PersonInfo@7575d993, com.bvirtuoso.hari.model.PersonInfo@1cd3917c, com.bvirtuoso.hari.model.PersonInfo@27048120, com.bvirtuoso.hari.model.PersonInfo@4b58fbaa]
+2022-06-24 22:22:07,459 921  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 27976 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:22:07,462 924  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:22:07,462 924  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:22:09,655 3117 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 22:22:09,691 3153 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 22:22:10,158 3620 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+2022-06-24 22:22:10,206 3668 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.springframework.boot.SpringApplication$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.bvirtuoso.hari.AlexaRoutineVoiceMonkeyApplication.main(AlexaRoutineVoiceMonkeyApplication.groovy:12)
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:232)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:181)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:164)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:75)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 20 common frames omitted
+2022-06-24 22:29:51,437 850  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 34000 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:29:51,440 853  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:29:51,440 853  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:29:53,811 3224 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invokeAlexaRoutineScheduler' defined in file [D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes\com\bvirtuoso\hari\controller\InvokeAlexaRoutineScheduler.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+2022-06-24 22:29:53,855 3268 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invokeAlexaRoutineScheduler' defined in file [D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes\com\bvirtuoso\hari\controller\InvokeAlexaRoutineScheduler.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.springframework.boot.SpringApplication$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.bvirtuoso.hari.AlexaRoutineVoiceMonkeyApplication.main(AlexaRoutineVoiceMonkeyApplication.groovy:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 23 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:232)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:181)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:164)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:75)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 34 common frames omitted
+2022-06-24 22:32:52,602 827  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 13560 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:32:52,604 829  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:32:52,604 829  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:32:54,913 3138 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invokeAlexaRoutineScheduler' defined in file [D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes\com\bvirtuoso\hari\controller\InvokeAlexaRoutineScheduler.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+2022-06-24 22:32:54,960 3185 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invokeAlexaRoutineScheduler' defined in file [D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes\com\bvirtuoso\hari\controller\InvokeAlexaRoutineScheduler.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at org.springframework.boot.SpringApplication$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.bvirtuoso.hari.AlexaRoutineVoiceMonkeyApplication.main(AlexaRoutineVoiceMonkeyApplication.groovy:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishInfoRepository' defined in com.bvirtuoso.hari.repository.DishInfoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 23 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.bvirtuoso.hari.model.DishInfo
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:232)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:181)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:164)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:75)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 34 common frames omitted
+2022-06-24 22:34:00,680 792  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 23028 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:34:00,682 794  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:34:00,683 795  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:34:03,137 3249 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 22:34:03,173 3285 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 22:34:03,454 3566 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.228 seconds (JVM running for 4.41)
+2022-06-24 22:35:08,169 68281 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@c73ac52, com.bvirtuoso.hari.model.DishInfo@cf69096]
+2022-06-24 22:36:00,357 120469 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@273e77c3, com.bvirtuoso.hari.model.DishInfo@7c4a4eca]
+2022-06-24 22:41:45,188 893  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 24220 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:41:45,190 895  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:41:45,190 895  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:41:47,752 3457 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 22:41:47,788 3493 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 22:41:48,073 3778 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.384 seconds (JVM running for 4.681)
+2022-06-24 22:42:00,700 16405 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@75ad44b4, com.bvirtuoso.hari.model.DishInfo@72d83f15]
+2022-06-24 22:43:27,791 103496 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@6195aa3e, com.bvirtuoso.hari.model.DishInfo@7278e054]
+2022-06-24 22:44:00,480 136185 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@31f46bdf, com.bvirtuoso.hari.model.DishInfo@49aaa52]
+2022-06-24 22:45:00,415 196120 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@7e1d8302, com.bvirtuoso.hari.model.DishInfo@6cff3ea1]
+2022-06-24 22:46:00,408 256113 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@fa157ba, com.bvirtuoso.hari.model.DishInfo@34a23aa0]
+2022-06-24 22:47:00,418 316123 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@7c75c784, com.bvirtuoso.hari.model.DishInfo@5049c1]
+2022-06-24 22:48:00,391 376096 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@429f5fa5, com.bvirtuoso.hari.model.DishInfo@7dd08031]
+2022-06-24 22:49:00,404 436109 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@e128e74, com.bvirtuoso.hari.model.DishInfo@3319b4ae]
+2022-06-24 22:50:00,429 496134 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@2292f76c, com.bvirtuoso.hari.model.DishInfo@601f4a51]
+2022-06-24 22:51:00,413 556118 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@21ce7838, com.bvirtuoso.hari.model.DishInfo@7daaa168]
+2022-06-24 22:52:11,225 894  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 11900 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:52:11,227 896  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:52:11,227 896  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:52:13,651 3320 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 22:52:13,688 3357 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 22:52:13,969 3638 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.198 seconds (JVM running for 4.467)
+2022-06-24 22:52:30,017 19686 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '2022-06-24T22:52:30.013' with class 'java.time.LocalDateTime' to class 'java.time.LocalDate'
+	at org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation.continueCastOnSAM(DefaultTypeTransformation.java:408)
+	at org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation.continueCastOnNumber(DefaultTypeTransformation.java:319)
+	at org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation.castToType(DefaultTypeTransformation.java:243)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.castToType(ScriptBytecodeAdapter.java:615)
+	at com.bvirtuoso.hari.controller.InvokeAlexaRoutineScheduler.updatePersonInfo(InvokeAlexaRoutineScheduler.groovy:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2022-06-24 22:52:56,302 800  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 5416 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-24 22:52:56,304 802  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-24 22:52:56,304 802  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-24 22:52:58,714 3212 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-24 22:52:58,751 3249 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-24 22:52:59,030 3528 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.183 seconds (JVM running for 4.39)
+2022-06-24 22:53:00,676 5174 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@75164822, com.bvirtuoso.hari.model.DishInfo@7f98e991]
+2022-06-24 22:54:00,411 64909 [scheduling-1] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - [com.bvirtuoso.hari.model.DishInfo@7b44b958, com.bvirtuoso.hari.model.DishInfo@76f8e19d]

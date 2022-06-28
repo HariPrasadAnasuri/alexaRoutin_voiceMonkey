@@ -1,0 +1,42 @@
+2022-06-25 00:15:17,003 673  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 26644 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-25 00:15:17,006 676  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-25 00:15:17,006 676  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-25 00:15:19,004 2674 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-25 00:15:19,084 2754 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-25 00:15:19,326 2996 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 2.701 seconds (JVM running for 3.755)
+2022-06-25 00:17:11,923 968  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Starting AlexaRoutineVoiceMonkeyApplication using Java 1.8.0_331 on hariprasad with PID 32004 (D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey\target\classes started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-25 00:17:11,927 972  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplication - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-25 00:17:11,927 972  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - No active profile set, falling back to default profiles: default
+2022-06-25 00:17:14,593 3638 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-25 00:17:14,630 3675 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-25 00:17:14,979 4024 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplication - Started AlexaRoutineVoiceMonkeyApplication in 3.54 seconds (JVM running for 4.951)
+2022-06-25 00:21:50,963 980  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Starting AlexaRoutineVoiceMonkeyApplicationTests using Java 1.8.0_41 on hariprasad with PID 33080 (started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-25 00:21:50,964 981  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-25 00:21:50,964 981  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - No active profile set, falling back to default profiles: default
+2022-06-25 00:21:54,533 4550 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-25 00:21:54,800 4817 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-25 00:21:55,357 5374 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Started AlexaRoutineVoiceMonkeyApplicationTests in 4.821 seconds (JVM running for 5.882)
+2022-06-25 00:22:37,692 862  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Starting AlexaRoutineVoiceMonkeyApplicationTests using Java 1.8.0_41 on hariprasad with PID 36828 (started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-25 00:22:37,693 863  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-25 00:22:37,694 864  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - No active profile set, falling back to default profiles: default
+2022-06-25 00:22:41,683 4853 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-25 00:22:41,907 5077 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-25 00:22:42,444 5614 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Started AlexaRoutineVoiceMonkeyApplicationTests in 5.085 seconds (JVM running for 6.082)
+2022-06-25 00:34:03,077 828  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Starting AlexaRoutineVoiceMonkeyApplicationTests using Java 1.8.0_41 on hariprasad with PID 3228 (started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-25 00:34:03,078 829  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-25 00:34:03,078 829  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - No active profile set, falling back to default profiles: default
+2022-06-25 00:34:06,257 4008 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-25 00:34:06,488 4239 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-25 00:34:06,998 4749 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Started AlexaRoutineVoiceMonkeyApplicationTests in 4.233 seconds (JVM running for 5.217)
+2022-06-25 00:35:44,283 1550 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Starting AlexaRoutineVoiceMonkeyApplicationTests using Java 1.8.0_41 on hariprasad with PID 10244 (started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-25 00:35:44,284 1551 [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-25 00:35:44,284 1551 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - No active profile set, falling back to default profiles: default
+2022-06-25 00:35:48,809 6076 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-25 00:35:49,082 6349 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-25 00:35:49,623 6890 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Started AlexaRoutineVoiceMonkeyApplicationTests in 6.145 seconds (JVM running for 7.375)
+2022-06-25 00:48:36,447 844  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Starting AlexaRoutineVoiceMonkeyApplicationTests using Java 1.8.0_41 on hariprasad with PID 13628 (started by haria in D:\Hari\Personal\projects\Experiments\AlexaApisInvoker\alexaroutin_voicemonkey)
+2022-06-25 00:48:36,447 844  [main] DEBUG c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-06-25 00:48:36,447 844  [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - No active profile set, falling back to default profiles: default
+2022-06-25 00:48:39,713 4110 [main] DEBUG c.b.h.c.InvokeAlexaRoutineScheduler - Scheduler initialized
+2022-06-25 00:48:39,946 4343 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-25 00:48:40,476 4873 [main] INFO  c.b.h.AlexaRoutineVoiceMonkeyApplicationTests - Started AlexaRoutineVoiceMonkeyApplicationTests in 4.349 seconds (JVM running for 5.358)

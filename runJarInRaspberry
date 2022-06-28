@@ -1,0 +1,5 @@
+open scp://pi:raspberry@192.168.29.58 -hostkey="*"
+put target\alexaroutin_voicemonkey-0.0.1-SNAPSHOT.jar
+call java -cp java -cp alexaroutin_voicemonkey-0.0.1-SNAPSHOT.jar
+close
+exit

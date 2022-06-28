@@ -1,0 +1,41 @@
+voiceMonkey:
+  fan:
+    turnOnOrOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-fan-monkey&announcement=Hello%20monkey
+  entertainment:
+    turnOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-entertainment&announcement=Hello%20monkey
+    turnOn: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-entertainment-1&announcement=Hello%20monkey
+  tellTime: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-time&announcement=Hello%20monkey
+  tellDate: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-date&announcement=Hello%20monkey
+  drinkWater: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement&announcement=Drink water please
+
+app:
+  bvirtuoso:
+    turnOffTv: http://www.bvirtuoso.com/tvOff
+    turnOnTv: http://www.bvirtuoso.com/tvOn
+    onOffDuration: http://bvirtuoso.herokuapp.com/tvOnOrOffDuration
+    getPeopleInfo: http://www.bvirtuoso.com/getPeopleInfo
+    getDishInfo: http://www.bvirtuoso.com/getDishInfo
+    clearDishAndPeopleInfo: http://www.bvirtuoso.com/clearDishAndPeopleInfo
+logging:
+  config: classpath:logback-spring.xml
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/healthInfo
+    username: healthInfo
+    password: myHealthInfo
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  #    To load the data
+  #  sql:
+  #    init:
+  #      mode: always
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
