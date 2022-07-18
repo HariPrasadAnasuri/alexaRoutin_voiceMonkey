@@ -22,14 +22,14 @@ public class ApiInvoker {
     invokeApi(url);
   }
 
-  void invokeApi(String url){
+  String invokeApi(String url){
     HttpHeaders headers = new HttpHeaders();
     headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
     //After setting user agent only able to call the API
     // Always check the IDE pointing proper Java Installation or not, otherwise will get trust store keys issue.
     headers.add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
     HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
-    restTemplate.exchange(url, HttpMethod.GET, entity, String.class).getBody();
+    return restTemplate.exchange(url, HttpMethod.GET, entity, String.class).getBody();
   }
 
   public List<PersonInfo> getPersonInfo(String url){

@@ -7,7 +7,7 @@ voiceMonkey:
   tellTime: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-time&announcement=Hello%20monkey
   tellDate: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-date&announcement=Hello%20monkey
   drinkWater: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement&announcement=Drink water please
-
+  pleaseWalk: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement&announcement=Harsha please walk
 app:
   bvirtuoso:
     turnOffTv: http://www.bvirtuoso.com/tvOff
@@ -16,6 +16,7 @@ app:
     getPeopleInfo: http://www.bvirtuoso.com/getPeopleInfo
     getDishInfo: http://www.bvirtuoso.com/getDishInfo
     clearDishAndPeopleInfo: http://www.bvirtuoso.com/clearDishAndPeopleInfo
+    harshaAvailability: http://www.bvirtuoso.com/getHarshaAvailability
 logging:
   config: classpath:logback-spring.xml
 

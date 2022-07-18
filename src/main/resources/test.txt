@@ -1,0 +1,13 @@
+favoriteContext=bookmark%3FAPS200%26fieldNames=W1SINO%2C10340888550%2CWFDIVI%2C810%2CWTDIVI%2C810%2CWWSPYN%2C100969%2CWWSUNO%2C100969%2CWWINVT%2C3%26includeStartPanel=True%26source=MForms%26requirePanel=True%26sortingOrder=1%26view=STD01%26panel=B%26tableName=FPLEDG%26keys=EPCONO%2C999%2CEPDIVI%2C%20%20%20%2CEPYEA4%2C%2B%2CEPJRNO%2C%2B%2CEPJSNO%2C%2B&LogicalId=lid://infor.m3.prd
+
+
+
+mforms://bookmark/?program=APS200&amp;tablename=FPLEDG&amp;startpanel=B&amp;includestartpanel=True&amp;requirepanel=True&amp;suppressconfirm=False&amp;source=MForms&amp;sortingorder=1&amp;view=STD01&amp;name=Acc+Payable.+Display+-+APS200%2fB1&amp;keys=EPCONO%2c&lt;CONO&gt;%2cEPDIVI%2c%2b%2cEPYEA4%2c%2b%2cEPJRNO%2c%2b%2cEPJSNO%2c%2b&amp;fields=WFDIVI%2c&lt;DIVI&gt;%2cWTDIVI%2c&lt;DIVI&gt;%2cWWSPYN%2c&lt;SUNO&gt;%2cWWSUNO%2c&lt;SUNO&gt;%2cWWINVT%2c3%2cW1SINO%2c&lt;SINO&gt;
+
+
+?favoriteContext=bookmark%3FPMS095%26fieldNames=W1OPNO%2C%2CW1TRDT%2C%2CWWFACI%2C431%2CWWPRNO%2C%2CWWMFNO%2C%26includeStartPanel=True%26source=MForms%26requirePanel=True%26sortingOrder=1%26tableName=MWOPTR%26keys=VHCONO%2C250%2CVHFACI%2C%2B%2CVHPRNO%2C%2B%2CVHMFNO%2C%2B%2CVHOPNO%2C%2B%2CVHTRDT%2C%2B%2CVHTRTM%2C%2B%2CVHTMSX%2C%2B%26startpanel=B&amp;LogicalId=lid://infor.m3
+
+mforms://bookmark/?program=PMS095&amp;tablename=MWOPTR&amp;startpanel=B&amp;includestartpanel=True&amp;requirepanel=True&amp;suppressconfirm=False&amp;source=MForms&amp;sortingorder=1&amp;&amp;name=PMS095+MO+Operation.+Display+Transactions&amp;keys=VHCONO%2C&lt;CONO&gt;%2CVHFACI%2C%2B%2CVHPRNO%2C%2B%2CVHMFNO%2C%2B%2CVHOPNO%2C%2B%2CVHTRDT%2C%2B%2CVHTRTM%2C%2B%2CVHTMSX%2C%2B&amp;fields=W1OPNO%2C%2CW1TRDT%2C%2CWWFACI%2C432%2CWWPRNO%2C&lt;PRNO&gt;%2CWWMFNO%2C
+
+
+=bookmark%3FPMS095%26fieldNames%3DW1OPNO%2C%2CW1TRDT%2C%2CWWFACI%2C431%2CWWPRNO%2C%2CWWMFNO%2C%26includeStartPanel%3DTrue%26source%3DMForms%26requirePanel%3DTrue%26sortingOrder%3D1%26tableName%3DMWOPTR%26keys%3DVHCONO%2C250%2CVHFACI%2C%2B%2CVHPRNO%2C%2B%2CVHMFNO%2C%2B%2CVHOPNO%2C%2B%2CVHTRDT%2C%2B%2CVHTRTM%2C%2B%2CVHTMSX%2C%2B%26startpanel%3DB&LogicalId=lid://infor.m3.m3
