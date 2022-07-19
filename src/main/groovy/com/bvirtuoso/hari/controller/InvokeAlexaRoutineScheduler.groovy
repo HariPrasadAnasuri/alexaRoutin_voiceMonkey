@@ -160,6 +160,7 @@ class InvokeAlexaRoutineScheduler {
             //Period period = Period.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now());
             Duration duration = Duration.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now())
             if(duration.getSeconds() > 900){
+                log.debug("Announcing - Please Walk")
                 apiInvoker.invokeApi(pleaseWalk)
                 harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
             }
