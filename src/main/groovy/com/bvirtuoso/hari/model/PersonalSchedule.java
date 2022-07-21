@@ -10,6 +10,7 @@ public class PersonalSchedule {
   String taskDesc;
   AppConstants.ScheduleStatus scheduleStatus;
   Duration duration;
+  Boolean isAlreadyAdded = false;
 
   public LocalTime getTime() {
     return time;
@@ -41,5 +42,13 @@ public class PersonalSchedule {
 
   public void setDuration(Duration duration) {
     this.duration = duration;
+  }
+
+  public Boolean getAlreadyAdded() {
+    return isAlreadyAdded;
+  }
+
+  public void setAlreadyAdded(Boolean alreadyAdded) {
+    isAlreadyAdded = alreadyAdded;
   }
 }
