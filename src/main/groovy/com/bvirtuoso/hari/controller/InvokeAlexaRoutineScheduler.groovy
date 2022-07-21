@@ -190,4 +190,9 @@ class InvokeAlexaRoutineScheduler {
         }
         println("onOrOffDuration ${onOrOffDuration}")*/
     }
+
+    @Scheduled(cron = "0 0/1 * * * *")
+    void hariSchedule(){
+
+    }
 }
