@@ -2,7 +2,9 @@ package com.bvirtuoso.hari.controller
 
 import com.bvirtuoso.hari.api.ApiInvoker
 import com.bvirtuoso.hari.model.DishInfo
+import com.bvirtuoso.hari.model.HariSchedule
 import com.bvirtuoso.hari.model.PersonInfo
+import com.bvirtuoso.hari.model.PersonalSchedule
 import com.bvirtuoso.hari.model.jpa.DishInfoJpa
 import com.bvirtuoso.hari.model.jpa.HealthInfoJpa
 import com.bvirtuoso.hari.repository.DishInfoRepository
@@ -20,6 +22,7 @@ import org.springframework.web.client.RestTemplate
 import java.time.Duration
 import java.time.LocalDate
 import java.time.LocalDateTime
+import java.time.LocalTime
 import java.time.Period
 
 @Controller
@@ -29,6 +32,8 @@ class InvokeAlexaRoutineScheduler {
     @Autowired
     final HarshaExerciseStatus harshaExerciseStatus
 
+    List<PersonalSchedule> hariSchedules
+
     final private RestTemplate restTemplate
     private final ApiInvoker apiInvoker
 
@@ -36,6 +41,7 @@ class InvokeAlexaRoutineScheduler {
     @Value("\${voiceMonkey.entertainment.turnOff}") String turnOffEntertainment
     @Value("\${voiceMonkey.entertainment.turnOn}") String turnOnEntertainment
     @Value("\${voiceMonkey.drinkWater}") String drinkWater
+    @Value("\${voiceMonkey.wildcard}") String wildcard
     @Value("\${app.bvirtuoso.turnOffTv}") String turnOffTv
     @Value("\${app.bvirtuoso.turnOnTv}") String turnOnTv
     @Value("\${voiceMonkey.tellTime}") String tellTime
@@ -191,8 +197,38 @@ class InvokeAlexaRoutineScheduler {
         println("onOrOffDuration ${onOrOffDuration}")*/
     }
 
-    @Scheduled(cron = "0 0/1 * * * *")
-    void hariSchedule(){
+    @Scheduled(cron = "0 0 0,2 * * *")
+    void resetSchedules(){
+        println("resetSchedules() called")
+        HariSchedule hariScheduleObj = new HariSchedule()
+        hariSchedules =  hariScheduleObj.prepareScheduledTimes();
+    }
 
+    @Scheduled(cron = "0 0 7 * * *")
+    void startHariScheduleForTheDay(){
+        println("startHariScheduleForTheDay() called")
+        LocalTime scheduledFrom = LocalTime.now().plusHours(1)
+        LocalDate date = LocalDate.now()
+        hariSchedules.each {
+            hariSchedule ->
+                hariSchedule.setLocalDateTime(LocalDateTime.of(date, scheduledFrom))
+                hariSchedule.setAlreadyAdded(false)
+                scheduledFrom = scheduledFrom.plusSeconds(hariSchedule.getDuration().getSeconds())
+                println("Time: ${hariSchedule.getLocalDateTime()} Duration: ${hariSchedule.duration.getSeconds()/60} taskDesc: ${hariSchedule.taskDesc}" )
+        }
+    }
+
+    @Scheduled(cron = "0 0/1 8-23 * * *")
+    void hariSchedule(){
+        println("hariSchedule() called")
+        hariSchedules.each {
+            schedule ->
+            if (!schedule.getAlreadyAdded()) {
+                if (schedule.getLocalDateTime().isAfter(LocalDateTime.now())) {
+                    schedule.setAlreadyAdded(true)
+                    apiInvoker.invokeVoiceMonkeyApi(wildcard + schedule.getTaskDesc())
+                }
+            }
+        }
     }
 }

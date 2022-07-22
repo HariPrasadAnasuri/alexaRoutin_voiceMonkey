@@ -4,6 +4,7 @@ import com.bvirtuoso.hari.model.HariSchedule
 import com.bvirtuoso.hari.model.PersonalSchedule
 
 import java.time.Duration
+import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
@@ -28,16 +29,17 @@ class TestClass {
         }
         List<Integer> scheduleTimeDurations = []*/
 
-        HariSchedule hariScheduleObj = new HariSchedule()
+        /*HariSchedule hariScheduleObj = new HariSchedule()
         List<PersonalSchedule> hariSchedules =  hariScheduleObj.prepareScheduledTimes();
         //print(hariSchedules)
         LocalTime scheduledFrom = LocalTime.now().minusHours(15)
+        LocalDate date = LocalDate.now().minusDays(1)
         hariSchedules.each {
             hariSchedule ->
-                hariSchedule.setTime(scheduledFrom)
+                hariSchedule.setLocalDateTime(LocalDateTime.of(date, scheduledFrom))
                 scheduledFrom = scheduledFrom.plusSeconds(hariSchedule.getDuration().getSeconds())
-                println("Time: ${hariSchedule.getTime()} Duration: ${hariSchedule.duration.getSeconds()/60} taskDesc: ${hariSchedule.taskDesc}" )
-        }
+                println("Time: ${hariSchedule.getLocalDateTime()} Duration: ${hariSchedule.duration.getSeconds()/60} taskDesc: ${hariSchedule.taskDesc}" )
+        }*/
 
 
     }
