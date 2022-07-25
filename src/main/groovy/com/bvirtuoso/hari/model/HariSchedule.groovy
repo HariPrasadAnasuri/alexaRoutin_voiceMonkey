@@ -39,8 +39,7 @@ class HariSchedule extends PersonalSchedule{
                 new PersonalSchedule(taskDesc: "You should be in bed", duration: Duration.ofMinutes(30))
         ]
     }
-    List<PersonalSchedule> prepareScheduledTimes(){
-        LocalTime scheduledFrom = LocalTime.now().minusHours(15)
+    List<PersonalSchedule> prepareScheduledTimes(LocalTime scheduledFrom){
         variableSchedules.each {schedule ->
             LocalTime scheduledUntil = scheduledFrom.plusSeconds(schedule.getDuration().getSeconds())
             scheduledUntil = checkIsItCrossingFixedTime(scheduledFrom, scheduledUntil, schedule)

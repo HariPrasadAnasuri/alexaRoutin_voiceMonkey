@@ -67,7 +67,7 @@ class InvokeAlexaRoutineScheduler {
         this.healthInfoRepository = healthInfoRepository
     }
 
-    @Scheduled(cron = "0 0/20 10-23 * * *")
+    @Scheduled(cron = "10 0/20 10-23 * * *")
     public void drinkWater(){
         log.debug("Announcing drink water")
         apiInvoker.invokeVoiceMonkeyApi(drinkWater)
@@ -175,7 +175,7 @@ class InvokeAlexaRoutineScheduler {
 
     @Scheduled(cron = "0 0/1 15-17 * * *")
     public void tvOnOrOff(){
-        log.debug("Announcing tvOnOff")
+        //log.debug("Announcing tvOnOff")
         //println("Inside tvOnOrOff method")
         //After setting user agent only able to call the API
         // Always check the IDE pointing proper Java Installation or not, otherwise will get trust store keys issue.
@@ -201,13 +201,17 @@ class InvokeAlexaRoutineScheduler {
     void resetSchedules(){
         println("resetSchedules() called")
         HariSchedule hariScheduleObj = new HariSchedule()
-        hariSchedules =  hariScheduleObj.prepareScheduledTimes();
+        LocalTime scheduledFrom = LocalTime.now()
+        //LocalTime scheduledFrom = LocalTime.of(8, 00)
+        hariSchedules =  hariScheduleObj.prepareScheduledTimes(scheduledFrom);
     }
 
     @Scheduled(cron = "0 0 7 * * *")
     void startHariScheduleForTheDay(){
         println("startHariScheduleForTheDay() called")
         LocalTime scheduledFrom = LocalTime.now().plusHours(1)
+        // For testing enable following
+        //LocalTime scheduledFrom  = LocalTime.of(8, 00)
         LocalDate date = LocalDate.now()
         hariSchedules.each {
             hariSchedule ->
@@ -217,16 +221,22 @@ class InvokeAlexaRoutineScheduler {
                 println("Time: ${hariSchedule.getLocalDateTime()} Duration: ${hariSchedule.duration.getSeconds()/60} taskDesc: ${hariSchedule.taskDesc}" )
         }
     }
-
+    boolean onceOnly = true
     @Scheduled(cron = "0 0/1 8-23 * * *")
     void hariSchedule(){
-        println("hariSchedule() called")
+        // Following is useful when doing some testing
+        /*if(onceOnly){
+            resetSchedules()
+            startHariScheduleForTheDay()
+            onceOnly = false
+        }*/
+        log.debug("hariSchedule() called")
         hariSchedules.each {
             schedule ->
             if (!schedule.getAlreadyAdded()) {
-                if (schedule.getLocalDateTime().isAfter(LocalDateTime.now())) {
+                if (schedule.getLocalDateTime().isBefore(LocalDateTime.now())) {
                     schedule.setAlreadyAdded(true)
-                    apiInvoker.invokeVoiceMonkeyApi(wildcard + schedule.getTaskDesc())
+                    apiInvoker.invokeVoiceMonkeyApi(wildcard + schedule.getTaskDesc() + "about "+ (schedule.getDuration().getSeconds()/60) +"Minutes")
                 }
             }
         }
