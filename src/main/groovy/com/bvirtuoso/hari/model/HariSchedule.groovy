@@ -28,10 +28,13 @@ class HariSchedule extends PersonalSchedule{
                 new PersonalSchedule(taskDesc: "Treadmill", duration: Duration.ofMinutes(15)),
                 new PersonalSchedule(taskDesc: "Time for office work", duration: Duration.ofMinutes(120)),
                 new PersonalSchedule(taskDesc: "Do your favorite work", duration: Duration.ofMinutes(60)),
+                new PersonalSchedule(taskDesc: "Lunch time", time: lunchTime, duration: Duration.ofMinutes(60)),
+                new PersonalSchedule(taskDesc: "Take a quick nap", time: afterLunchNap, duration: Duration.ofMinutes(30)),
                 new PersonalSchedule(taskDesc: "Time for office work", duration: Duration.ofMinutes(120)),
                 new PersonalSchedule(taskDesc: "Do exercise", duration: Duration.ofMinutes(60)),
                 new PersonalSchedule(taskDesc: "Have some snacks", duration: Duration.ofMinutes(55)),
                 new PersonalSchedule(taskDesc: "Time for office work", duration: Duration.ofMinutes(120)),
+                new PersonalSchedule(taskDesc: "Dinner time", time: dinnerTime, duration: Duration.ofMinutes(60)),
                 new PersonalSchedule(taskDesc: "Time for office work", duration: Duration.ofMinutes(60)),
                 new PersonalSchedule(taskDesc: "Treadmill", duration: Duration.ofMinutes(20)),
                 new PersonalSchedule(taskDesc: "Time for office work", duration: Duration.ofMinutes(60)),
@@ -40,12 +43,14 @@ class HariSchedule extends PersonalSchedule{
         ]
     }
     List<PersonalSchedule> prepareScheduledTimes(LocalTime scheduledFrom){
-        variableSchedules.each {schedule ->
+        return variableSchedules
+//        Following code will adjust the final schedules based on fixed schedules
+        /*variableSchedules.each {schedule ->
             LocalTime scheduledUntil = scheduledFrom.plusSeconds(schedule.getDuration().getSeconds())
             scheduledUntil = checkIsItCrossingFixedTime(scheduledFrom, scheduledUntil, schedule)
             scheduledFrom = scheduledUntil
         }
-        return finalAdjustedSchedules
+        return finalAdjustedSchedules*/
     }
     private LocalTime checkIsItCrossingFixedTime(LocalTime scheduledFrom, LocalTime scheduledUntil, PersonalSchedule schedule){
         LocalTime untilTime = scheduledFrom
