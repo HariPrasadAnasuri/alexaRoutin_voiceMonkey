@@ -9,6 +9,9 @@ voiceMonkey:
   drinkWater: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement&announcement=Drink water please
   pleaseWalk: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement&announcement=Harsha please walk
   wildcard: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement-for-hari&announcement=
+  turnOnDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-deco-light-monkey&announcement=Hello%20monkey
+  turnOffDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-deco-light-monkey&announcement=Hello%20monkey
+
 app:
   bvirtuoso:
     turnOffTv: http://www.bvirtuoso.com/tvOff

@@ -50,6 +50,8 @@ class InvokeAlexaRoutineScheduler {
     @Value("\${app.bvirtuoso.getDishInfo}") String getDishInfo
     @Value("\${app.bvirtuoso.clearDishAndPeopleInfo}") String clearDishAndPeopleInfo
     @Value("\${app.bvirtuoso.harshaAvailability}") String harshaAvailability
+    @Value("\${voiceMonkey.turnOnDecoLight}") String turnOnDecoLight
+    @Value("\${voiceMonkey.turnOffDecoLight}") String turnOffDecoLight
 
 
     private final DishInfoRepository dishInfoRepository
@@ -169,8 +171,19 @@ class InvokeAlexaRoutineScheduler {
             if(duration.getSeconds() > 900){
                 log.debug("Announcing - Please Walk")
                 apiInvoker.invokeApi(pleaseWalk)
+                apiInvoker.invokeApi(turnOffDecoLight)
                 harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
+            }else{
+                apiInvoker.invokeApi(turnOnDecoLight)
             }
+        }
+        Duration duration = Duration.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now())
+        if(duration.getSeconds() > 900){
+            log.debug("Turn off deco light")
+            apiInvoker.invokeApi(turnOffDecoLight)
+            harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
+        }else{
+            apiInvoker.invokeApi(turnOnDecoLight)
         }
     }
 
@@ -210,7 +223,7 @@ class InvokeAlexaRoutineScheduler {
     @Scheduled(cron = "0 0 7 * * *")
     void startHariScheduleForTheDay(){
         log.debug("startHariScheduleForTheDay() called")
-        LocalTime scheduledFrom = LocalTime.now().plusHours(2)
+        LocalTime scheduledFrom = LocalTime.now().plusHours(1)
         // For testing enable following
         //LocalTime scheduledFrom  = LocalTime.of(8, 00)
         LocalDate date = LocalDate.now()
@@ -218,12 +231,13 @@ class InvokeAlexaRoutineScheduler {
             hariSchedule ->
                 hariSchedule.setLocalDateTime(LocalDateTime.of(date, scheduledFrom))
                 hariSchedule.setAlreadyAdded(false)
-                scheduledFrom = scheduledFrom.plusSeconds(hariSchedule.getDuration().getSeconds())
+                scheduledFrom = scheduledFrom.plu
+                sSeconds(hariSchedule.getDuration().getSeconds())
                 log.debug("Time: ${hariSchedule.getLocalDateTime()} Duration: ${hariSchedule.duration.getSeconds()/60} taskDesc: ${hariSchedule.taskDesc}" )
         }
     }
     boolean onceOnly = true
-    @Scheduled(cron = "0 0/1 8-23 * * *")
+    //@Scheduled(cron = "0 0/1 8-23 * * *")
     void hariSchedule(){
         // Following is useful when doing some testing
         /*if(onceOnly){
