@@ -9,13 +9,15 @@ import com.bvirtuoso.hari.model.jpa.DishInfoJpa
 import com.bvirtuoso.hari.model.jpa.HealthInfoJpa
 import com.bvirtuoso.hari.repository.DishInfoRepository
 import com.bvirtuoso.hari.repository.HealthInfoRepository
-import com.bvirtuoso.hari.service.HarshaExerciseStatus
+import com.bvirtuoso.hari.service.MotionBasedTask
 import org.apache.juli.logging.Log
 import org.apache.juli.logging.LogFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Controller
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.client.RestTemplate
 
 import java.time.Duration
@@ -23,12 +25,15 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
 
-@Controller
+@RestController
 class InvokeAlexaRoutineScheduler {
     private final static Log log = LogFactory.getLog(InvokeAlexaRoutineScheduler.class)
 
     @Autowired
-    final HarshaExerciseStatus harshaExerciseStatus
+    final MotionBasedTask harshaExerciseStatus
+
+    @Autowired
+    final MotionBasedTask decoLightStatus
 
     List<PersonalSchedule> hariSchedules
 
@@ -56,6 +61,8 @@ class InvokeAlexaRoutineScheduler {
 
     private final DishInfoRepository dishInfoRepository
     private final HealthInfoRepository healthInfoRepository
+
+    private boolean isLightOn = false;
 
     public InvokeAlexaRoutineScheduler(RestTemplate restTemplate, ApiInvoker apiInvoker,
                                         DishInfoRepository dishInfoRepository,
@@ -160,9 +167,14 @@ class InvokeAlexaRoutineScheduler {
         //log.debug("deleteInformationFromBvirtuosoApp called")
     }
 
+    @GetMapping("/motionDetected")
+    public void checkMotion(){
+        log.debug("Update the Motion info")
+        harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
+        decoLightStatus.setLocalDateTime(LocalDateTime.now())
+    }
 
-
-    @Scheduled(cron = "0 0/1 * * * *")
+    @Scheduled(cron = "0/30 * * * * *")
     void harshaIdleCheck(){
         String availability = apiInvoker.invokeApi(harshaAvailability)
         if(availability.equals("available")){
@@ -171,19 +183,30 @@ class InvokeAlexaRoutineScheduler {
             if(duration.getSeconds() > 900){
                 log.debug("Announcing - Please Walk")
                 apiInvoker.invokeApi(pleaseWalk)
-                apiInvoker.invokeApi(turnOffDecoLight)
                 harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
             }else{
                 apiInvoker.invokeApi(turnOnDecoLight)
             }
         }
-        Duration duration = Duration.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now())
-        if(duration.getSeconds() > 900){
-            log.debug("Turn off deco light")
-            apiInvoker.invokeApi(turnOffDecoLight)
-            harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
+    }
+
+    @Scheduled(cron = "0/2 * * * * *")
+    void decoLightOnOff(){
+        Duration duration = Duration.between(decoLightStatus.getLocalDateTime(), LocalDateTime.now())
+        if(duration.getSeconds() > 60){
+            if(isLightOn){
+                log.debug("Turn off deco light")
+                apiInvoker.invokeApi(turnOffDecoLight)
+                isLightOn = false
+            }
+
+            //decoLightStatus.setLocalDateTime(LocalDateTime.now())
         }else{
-            apiInvoker.invokeApi(turnOnDecoLight)
+            if(!isLightOn) {
+                log.debug("Turn on deco light")
+                apiInvoker.invokeApi(turnOnDecoLight)
+                isLightOn = true
+            }
         }
     }
 
@@ -231,8 +254,7 @@ class InvokeAlexaRoutineScheduler {
             hariSchedule ->
                 hariSchedule.setLocalDateTime(LocalDateTime.of(date, scheduledFrom))
                 hariSchedule.setAlreadyAdded(false)
-                scheduledFrom = scheduledFrom.plu
-                sSeconds(hariSchedule.getDuration().getSeconds())
+                scheduledFrom = scheduledFrom.plusSeconds(hariSchedule.getDuration().getSeconds())
                 log.debug("Time: ${hariSchedule.getLocalDateTime()} Duration: ${hariSchedule.duration.getSeconds()/60} taskDesc: ${hariSchedule.taskDesc}" )
         }
     }
