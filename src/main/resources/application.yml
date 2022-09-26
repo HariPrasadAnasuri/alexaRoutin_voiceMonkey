@@ -1,18 +1,20 @@
+server:
+  port: 8071
 voiceMonkey:
   fan:
     turnOnOrOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-fan-monkey&announcement=test
   entertainment:
-    turnOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-entertainment&announcement=test
-    turnOn: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-entertainment-1&announcement=test
-    play: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=play-tv-monkey&announcement=test
-    pause: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=pause-tv-monkey&announcement=test
+    turnOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-entertainment&announcement=turn off tv
+    turnOn: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-entertainment-1&announcement=turn on tv
+    play: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=play-tv-monkey&announcement=play tv
+    pause: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=pause-tv-monkey&announcement=pause tv
   tellTime: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-time&announcement=test
   tellDate: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-date&announcement=test
   drinkWater: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement&announcement=Drink water please
   hariAnnouncement: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement-for-hari&announcement=
   hallAnnouncement: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkeyannouncementforhall&announcement=
-  turnOnDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-deco-light-monkey&announcement=test
-  turnOffDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-deco-light-monkey&announcement=test
+  turnOnDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-deco-light-monkey&announcement=n
+  turnOffDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-deco-light-monkey&announcement=f
 
 app:
   bvirtuoso:

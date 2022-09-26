@@ -33,11 +33,9 @@ import java.time.LocalTime
 class InvokeAlexaRoutineScheduler {
     private final static Log log = LogFactory.getLog(InvokeAlexaRoutineScheduler.class)
 
-    @Autowired
-    final MotionBasedTask harshaExerciseStatus
+    MotionBasedTask harshaExerciseStatus = new MotionBasedTask()
 
-    @Autowired
-    final MotionBasedTask decoLightStatus
+    MotionBasedTask decoLightStatus = new MotionBasedTask()
 
     List<PersonalSchedule> hariSchedules
 
@@ -64,6 +62,11 @@ class InvokeAlexaRoutineScheduler {
     @Value("\${voiceMonkey.entertainment.play}") String playTv
     @Value("\${voiceMonkey.entertainment.pause}") String pauseTv
 
+    private boolean alreadyAnnouncedPleaseWalk = false;
+    private int reactTimeForAnnouncement = 0
+    private boolean forReactTimeForAnnouncement = false
+    private int reactTimeAfterPause = 0
+    private boolean forReactTimeAfterPause = false
 
     private final DishInfoRepository dishInfoRepository
     private final HealthInfoRepository healthInfoRepository
@@ -183,6 +186,13 @@ class InvokeAlexaRoutineScheduler {
         log.debug("Update the Motion info")
         harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
         decoLightStatus.setLocalDateTime(LocalDateTime.now())
+        isPleaseWalkAnnounced = false
+    }
+
+    @Scheduled(cron = "0/1 * * * * *")
+    void counterForSeconds(){
+        reactTimeForAnnouncement++
+        reactTimeAfterPause++
     }
 
     @Scheduled(cron = "0/2 * * * * *")
@@ -191,54 +201,32 @@ class InvokeAlexaRoutineScheduler {
         if(availability.equals("available")){
             //Period period = Period.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now());
             Duration duration = Duration.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now())
-            if(duration.getSeconds() > 600){
-                log.debug("Announcing - Please Walk")
+            if(!isPleaseWalkAnnounced && (duration.getSeconds() > 600)){
+                log.debug("Please walk announced")
                 apiInvoker.invokeApi(hallAnnouncement+"Harsha please walk")
-                harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
+                reactTimeForAnnouncement = 0
+                forReactTimeForAnnouncement = true
                 isPleaseWalkAnnounced = true
-                justAnnouncedAboutWalking = false
-            }else{
-                if(isPleaseWalkAnnounced){
-                    log.debug("Just announced please walk");
-                    walkingStartedTime = LocalDateTime.now()
-
-                    isPleaseWalkAnnounced = false
-                }else{
-                    if(duration.getSeconds() < 60) {
-                        walkingInterval = Duration.between(walkingStartedTime, LocalDateTime.now())
-                        //log.debug("Since ${walkingInterval.getSeconds()} you are walking");
-                    }else{
-                        if(!justAnnouncedAboutWalking) {
-                            justAnnouncedAboutWalking = true
-                            if (walkingInterval.getSeconds() > 120) {
-                                apiInvoker.invokeApi("${hallAnnouncement}That's awesome you've been walking since 1 minute")
-                                if(warningCounterToSwitchOffTv > 1){
-                                    //Turn on TV
-                                    log.debug("Turning on TV")
-                                    apiInvoker.invokeApi(turnOnEntertainment)
-                                    warningCounterToSwitchOffTv = 0
-                                }
-                            } else {
-
-                                apiInvoker.invokeApi("${hallAnnouncement}I didn't see you that you are walking. If this repeat next time I'll turn off tv")
-                                warningCounterToSwitchOffTv++
-
-                                if(warningCounterToSwitchOffTv > 1){
-                                    //pause TV
-                                    log.debug("Pause TV")
-                                    apiInvoker.invokeApi(pauseTv)
-                                }
-                                if(warningCounterToSwitchOffTv > 2){
-                                    //Turn off TV
-                                    log.debug("Turning off TV")
-                                    apiInvoker.invokeApi(turnOffEntertainment)
-                                }
-                            }
-                        }
-                    }
-                }
-                //log.debug("")
-                //apiInvoker.invokeApi(wildcard+ "you can sit now")
+                //apiInvoker.invokeApi(turnOnEntertainment)
+                //apiInvoker.invokeApi(pauseTv)
+                //apiInvoker.invokeApi(turnOffEntertainment)
+            }else if(duration.getSeconds() < 600){
+                forReactTimeForAnnouncement = false
+                forReactTimeAfterPause = false
+            }
+            if(forReactTimeForAnnouncement && (reactTimeForAnnouncement > 15)){
+                apiInvoker.invokeApi("${hallAnnouncement}I didn't see you that you are walking. If this repeat next time I'll turn off tv")
+                log.debug("Pause TV")
+                apiInvoker.invokeApi(pauseTv)
+                reactTimeAfterPause = 0;
+                forReactTimeAfterPause = true
+                forReactTimeForAnnouncement = false
+            }
+            if(forReactTimeAfterPause && (reactTimeAfterPause > 30)){
+                log.debug("Turn off TV")
+                apiInvoker.invokeApi("${hallAnnouncement}Sorry to turn off TV, just try to walk")
+                apiInvoker.invokeApi(turnOffEntertainment)
+                forReactTimeAfterPause = false
             }
         }
     }
@@ -246,6 +234,8 @@ class InvokeAlexaRoutineScheduler {
     @Scheduled(cron = "0/2 * * * * *")
     void decoLightOnOff(){
         Duration duration = Duration.between(decoLightStatus.getLocalDateTime(), LocalDateTime.now())
+        /*Duration duration1 = Duration.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now())
+        log.debug("Duration of deco: ${duration.getSeconds()}, Duration of harsha: ${duration1.getSeconds()}")*/
         if(duration.getSeconds() > 60){
             if(isLightOn){
                 log.debug("Turn off deco light")

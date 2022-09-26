@@ -11,11 +11,10 @@ import java.time.LocalDateTime
 @RestController
 class CheckMotion {
 
-    @Autowired
-    final private MotionBasedTask harshaExerciseStatus
+    MotionBasedTask harshaExerciseStatus
 
-    public CheckMotion(final MotionBasedTask harshaExerciseStatus){
-        this.harshaExerciseStatus = harshaExerciseStatus
+    public CheckMotion(){
+        this.harshaExerciseStatus = new MotionBasedTask();
     }
 
     @GetMapping("/getInActivityTime")

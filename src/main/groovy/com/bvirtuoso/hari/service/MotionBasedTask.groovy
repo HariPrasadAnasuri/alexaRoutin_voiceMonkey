@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service
 
 import java.time.LocalDateTime
 
-@Service
-@Scope(value="prototype", proxyMode= ScopedProxyMode.DEFAULT)
+//@Service
+//@Scope(value="prototype", proxyMode= ScopedProxyMode.TARGET_CLASS)
 class MotionBasedTask {
 
-    static Boolean isTaskEnabled;
-    static LocalDateTime localDateTime = LocalDateTime.now();
+    Boolean isTaskEnabled;
+    LocalDateTime localDateTime = LocalDateTime.now();
 
     Boolean getIsTaskEnabled() {
         return isTaskEnabled
