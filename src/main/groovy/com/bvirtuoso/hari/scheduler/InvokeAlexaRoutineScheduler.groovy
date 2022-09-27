@@ -10,6 +10,7 @@ import com.bvirtuoso.hari.model.jpa.DishInfoJpa
 import com.bvirtuoso.hari.model.jpa.HealthInfoJpa
 import com.bvirtuoso.hari.repository.DishInfoRepository
 import com.bvirtuoso.hari.repository.HealthInfoRepository
+import com.bvirtuoso.hari.restService.RestApiEndpoint
 import com.bvirtuoso.hari.service.MotionBasedTask
 import org.apache.juli.logging.Log
 import org.apache.juli.logging.LogFactory
@@ -39,8 +40,11 @@ class InvokeAlexaRoutineScheduler {
 
     List<PersonalSchedule> hariSchedules
 
+
     final private RestTemplate restTemplate
     private final ApiInvoker apiInvoker
+
+    final private RestApiEndpoint restApiEndpoint
 
     @Value("\${voiceMonkey.fan.turnOnOrOff}") String turnOnOrOffFanUrl
     @Value("\${voiceMonkey.entertainment.turnOff}") String turnOffEntertainment
@@ -52,10 +56,6 @@ class InvokeAlexaRoutineScheduler {
     @Value("\${voiceMonkey.tellTime}") String tellTime
     @Value("\${voiceMonkey.tellDate}") String tellDate
     @Value("\${app.bvirtuoso.onOffDuration}") String onOffDuration
-    @Value("\${app.bvirtuoso.getPeopleInfo}") String getPeopleInfo
-    @Value("\${app.bvirtuoso.getDishInfo}") String getDishInfo
-    @Value("\${app.bvirtuoso.clearDishAndPeopleInfo}") String clearDishAndPeopleInfo
-    @Value("\${app.bvirtuoso.harshaAvailability}") String harshaAvailability
     @Value("\${voiceMonkey.turnOnDecoLight}") String turnOnDecoLight
     @Value("\${voiceMonkey.turnOffDecoLight}") String turnOffDecoLight
     @Value("\${voiceMonkey.hallAnnouncement}") String hallAnnouncement
@@ -81,7 +81,8 @@ class InvokeAlexaRoutineScheduler {
     public InvokeAlexaRoutineScheduler(RestTemplate restTemplate, ApiInvoker apiInvoker,
                                         DishInfoRepository dishInfoRepository,
                                         HealthInfoRepository healthInfoRepository,
-                                       @Value("\${voiceMonkey.hariAnnouncement}") String hariAnnouncement){
+                                       @Value("\${voiceMonkey.hariAnnouncement}") String hariAnnouncement,
+                                       final RestApiEndpoint restApiEndpoint){
         log.debug("Scheduler initialized")
         this.restTemplate = restTemplate
         this.apiInvoker = apiInvoker
@@ -89,6 +90,16 @@ class InvokeAlexaRoutineScheduler {
         this.healthInfoRepository = healthInfoRepository
         this.hariAnnouncement = hariAnnouncement
         this.apiInvoker.invokeVoiceMonkeyApi(hariAnnouncement + "Hey hari, application is deployed")
+        this.restApiEndpoint = restApiEndpoint
+
+    }
+
+    @GetMapping("/motionDetected")
+    public void checkMotion(){
+        log.debug("Update the Motion info")
+        harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
+        decoLightStatus.setLocalDateTime(LocalDateTime.now())
+        isPleaseWalkAnnounced = false
     }
 
     @Scheduled(cron = "10 0/20 10-23 * * *")
@@ -110,20 +121,19 @@ class InvokeAlexaRoutineScheduler {
     }
 
     //@Scheduled(cron = "0 0/5 20-23 * * *")
-    @Scheduled(cron = "0 0/5 * * * *")
+    @Scheduled(cron = "0/5 * * * * *")
     public void collectAllPersonalInformation(){
         //log.debug("collectAllPersonalInformation() called")
         updatePersonInfo()
         updateDishInfo()
-        deleteInformationFromBvirtuosoApp()
     }
 
     public void updatePersonInfo(){
         LocalDate localDate = LocalDate.now()
-        List<PersonInfo> personsInfo = apiInvoker.getPersonInfo(getPeopleInfo)
+        List<PersonInfo> personsInfo = restApiEndpoint.getPeopleInfo()
         personsInfo.each {personInfo ->
             HealthInfoJpa healthInfo = new HealthInfoJpa()
-            healthInfo.setLocalDateTime()
+            healthInfo.setLocalDateTime(LocalDateTime.now())
             healthInfo.setLocalDate(LocalDate.now())
             healthInfo.setName(personInfo.getName())
             boolean isWeight = true;
@@ -154,7 +164,7 @@ class InvokeAlexaRoutineScheduler {
     }
 
     public void updateDishInfo(){
-        List<DishInfo> dishesInfo = apiInvoker.getDishInfo(getDishInfo)
+        List<DishInfo> dishesInfo = restApiEndpoint.getDishInfo()
         LocalDate localDate = LocalDate.now()
         LocalDateTime localDateTime = LocalDateTime.now()
         dishesInfo.each {dishInfo ->
@@ -176,17 +186,10 @@ class InvokeAlexaRoutineScheduler {
 
     }
 
-    public void deleteInformationFromBvirtuosoApp(){
-        apiInvoker.invokeApi(clearDishAndPeopleInfo)
-        //log.debug("deleteInformationFromBvirtuosoApp called")
-    }
-
-    @GetMapping("/motionDetected")
-    public void checkMotion(){
-        log.debug("Update the Motion info")
-        harshaExerciseStatus.setLocalDateTime(LocalDateTime.now())
-        decoLightStatus.setLocalDateTime(LocalDateTime.now())
-        isPleaseWalkAnnounced = false
+    @Scheduled(cron = "0 0 0 * * *")
+    public void clearDishAndPeopleInfo(){
+        log.debug("calling clearDishAndPeopleInfo")
+        restApiEndpoint.clearDishAndPeopleInfo()
     }
 
     @Scheduled(cron = "0/1 * * * * *")
@@ -197,7 +200,7 @@ class InvokeAlexaRoutineScheduler {
 
     @Scheduled(cron = "0/2 * * * * *")
     void harshaIdleCheck(){
-        String availability = apiInvoker.invokeApi(harshaAvailability)
+        String availability = restApiEndpoint.getHarshaAvailability()
         if(availability.equals("available")){
             //Period period = Period.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now());
             Duration duration = Duration.between(harshaExerciseStatus.getLocalDateTime(), LocalDateTime.now())

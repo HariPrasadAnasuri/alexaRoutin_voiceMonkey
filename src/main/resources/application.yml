@@ -21,10 +21,6 @@ app:
     turnOffTv: http://www.bvirtuoso.com/tvOff
     turnOnTv: http://www.bvirtuoso.com/tvOn
     onOffDuration: http://bvirtuoso.herokuapp.com/tvOnOrOffDuration
-    getPeopleInfo: http://www.bvirtuoso.com/getPeopleInfo
-    getDishInfo: http://www.bvirtuoso.com/getDishInfo
-    clearDishAndPeopleInfo: http://www.bvirtuoso.com/clearDishAndPeopleInfo
-    harshaAvailability: http://www.bvirtuoso.com/getHarshaAvailability
 logging:
   config: classpath:logback-spring.xml
 
