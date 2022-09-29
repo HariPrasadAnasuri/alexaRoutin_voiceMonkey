@@ -58,7 +58,7 @@ class RestApiEndpoint {
         if(name.equals("jothi") || name.equals("jyothi") || name.equals("jyoti")){
             name = "jyothi";
         }
-        personInfo.setName(name);
+        personInfo.setName(name.toLowerCase());
         personInfo.setWeight(weight.setScale(2));
         personInfos.add(personInfo);
         return "success";
@@ -101,13 +101,18 @@ class RestApiEndpoint {
         return personInfos;
     }
 
-    @GetMapping("/clearDishAndPeopleInfo")
+    @GetMapping("/clearPeopleInfo")
     @ResponseBody
-    public String clearDishAndPeopleInfo() {
+    public String clearPeopleInfo() {
         //log.debug("Clearing dish info")
-        dishInfos = new ArrayList<>();
         personInfos = new ArrayList<>();
         return "success";
     }
-
+    @GetMapping("/clearDishInfo")
+    @ResponseBody
+    public String clearDishInfo() {
+        //log.debug("Clearing dish info")
+        dishInfos = new ArrayList<>();
+        return "success";
+    }
 }

@@ -137,7 +137,7 @@ class InvokeAlexaRoutineScheduler {
             healthInfo.setLocalDate(LocalDate.now())
             healthInfo.setName(personInfo.getName())
             boolean isWeight = true;
-            if(personInfo.getWeight() == 0.0f){
+            if((personInfo.getWeight() == null) || (personInfo.getWeight() == 0.0f)){
                 healthInfo.setNote(personInfo.getNote())
                 isWeight = false;
             }else{
@@ -158,6 +158,7 @@ class InvokeAlexaRoutineScheduler {
                 }
 
                 healthInfoRepository.save(healthInfoJpa)
+                restApiEndpoint.clearPeopleInfo()
             }
 
         }
@@ -181,6 +182,7 @@ class InvokeAlexaRoutineScheduler {
                 DishInfoJpa dishInfoJpa = healthInfoList.get(0)
                 dishInfoJpa.setName(dishInfo.getName())
                 dishInfoRepository.save(dishInfoJpa)
+                restApiEndpoint.clearDishInfo()
             }
         }
 
