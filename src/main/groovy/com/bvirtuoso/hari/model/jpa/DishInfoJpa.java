@@ -1,5 +1,7 @@
 package com.bvirtuoso.hari.model.jpa;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -7,8 +9,18 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "dishInfo")
 public class DishInfoJpa {
+
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(generator = "sequence-generator-dish")
+  @GenericGenerator(
+          name = "sequence-generator-dish",
+          strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+          parameters = {
+                  @org.hibernate.annotations.Parameter(name = "sequence_name", value = "user_sequence_dish"),
+                  @org.hibernate.annotations.Parameter(name = "initial_value", value = "20"),
+                  @org.hibernate.annotations.Parameter(name = "increment_size", value = "1")
+          }
+  )
   private long id;
 
   @Column(name = "local_date_time", columnDefinition = "TIMESTAMP")

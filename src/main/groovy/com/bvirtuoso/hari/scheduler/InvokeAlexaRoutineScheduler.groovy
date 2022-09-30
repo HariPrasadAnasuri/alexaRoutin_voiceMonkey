@@ -147,6 +147,7 @@ class InvokeAlexaRoutineScheduler {
             List<HealthInfoJpa> healthInfoList = healthInfoRepository.findByNameAndLocalDate(personInfo.getName(), localDate);
             if(healthInfoList.size() == 0){
                 healthInfoRepository.save(healthInfo)
+                restApiEndpoint.clearPeopleInfo()
             }else{
                 HealthInfoJpa healthInfoJpa = healthInfoList.get(0)
                 healthInfoJpa.setLocalDateTime(LocalDateTime.now())
@@ -157,7 +158,8 @@ class InvokeAlexaRoutineScheduler {
                     healthInfoJpa.setNote(personInfo.getNote())
                 }
 
-                healthInfoRepository.save(healthInfoJpa)
+                HealthInfoJpa healthSaveResult = healthInfoRepository.save(healthInfoJpa)
+                log.debug("healthSaveresult ${healthSaveResult}")
                 restApiEndpoint.clearPeopleInfo()
             }
 
@@ -186,12 +188,6 @@ class InvokeAlexaRoutineScheduler {
             }
         }
 
-    }
-
-    @Scheduled(cron = "0 0 0 * * *")
-    public void clearDishAndPeopleInfo(){
-        log.debug("calling clearDishAndPeopleInfo")
-        restApiEndpoint.clearDishAndPeopleInfo()
     }
 
     @Scheduled(cron = "0/1 * * * * *")

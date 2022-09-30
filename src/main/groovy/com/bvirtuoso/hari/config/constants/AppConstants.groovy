@@ -29,4 +29,35 @@ public class AppConstants {
 
     static List<PersonalSchedule> schedulesDuration =
             [new PersonalSchedule(duration: "")]
+
+    public enum GK_CONSTANTS  {
+        UNTOUCHED(0, "untouched"),
+        ASKED(1, "asked"),
+        ANSWERED(2, "answered"),
+        WRONGANSWER(3, "wronganswer");
+
+        private Integer code;
+        private String text;
+
+        private GK_CONSTANTS(Integer code, String text) {
+            this.code = code;
+            this.text= text;
+        }
+
+        public Integer getCode() {
+            return code;
+        }
+
+        public void setCode(Integer code) {
+            this.code = code;
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public void setText(String text) {
+            this.text = text;
+        }
+    }
 }

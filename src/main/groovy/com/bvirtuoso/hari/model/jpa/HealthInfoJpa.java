@@ -1,5 +1,8 @@
 package com.bvirtuoso.hari.model.jpa;
 
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -8,10 +11,20 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "healthInfo")
 public class HealthInfoJpa {
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  private long id;
 
+  @Id
+  @GeneratedValue(generator = "sequence-generator-health")
+  @GenericGenerator(
+          name = "sequence-generator-health",
+          strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+          parameters = {
+                  @Parameter(name = "sequence_name", value = "user_sequence_health"),
+                  @Parameter(name = "initial_value", value = "331"),
+                  @Parameter(name = "increment_size", value = "1")
+          }
+  )
+  private long id;
+  //org.hibernate.id.UUIDGenerator
   @Column(name = "local_date_time", columnDefinition = "TIMESTAMP")
   private LocalDateTime localDateTime;
 
