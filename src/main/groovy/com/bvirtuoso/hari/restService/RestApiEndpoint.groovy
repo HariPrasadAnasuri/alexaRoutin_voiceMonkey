@@ -35,9 +35,10 @@ class RestApiEndpoint {
     @Value("\${voiceMonkey.entertainment.turnOff}") String turnOffEntertainment;
     @Value("\${voiceMonkey.entertainment.turnOn}") String turnOnEntertainment;
 
-    private String harshaAvailable = "unavailable";
-    private List<DishInfo> dishInfos = new ArrayList<>();
-    private List<PersonInfo> personInfos = new ArrayList<>();
+    private String harshaAvailable = "unavailable"
+    private List<DishInfo> dishInfos = new ArrayList<>()
+    private List<PersonInfo> personInfos = new ArrayList<>()
+    private List<Map> queryDataList = [];
 
     final private RestTemplate restTemplate
     private final ApiInvoker apiInvoker
@@ -255,6 +256,27 @@ class RestApiEndpoint {
         }
         gkQuestionRepository.save(gkQuestionEntity);
         return returnMessage;
+    }
+
+    @GetMapping("/addQuestData")
+    @ResponseBody
+    public String addQuestData(@RequestParam def questDataString){
+        String[] questDataArray = questDataString.split(",")
+        queryDataList.clear()
+        questDataArray.each {
+            data ->
+                def questData = [:]
+                questData["tip"] = data
+                queryDataList.add(questData)
+        }
+        log.debug("Quest data: ${questDataString}")
+        return "Success"
+    }
+
+    @GetMapping("/getQuestData")
+    @ResponseBody
+    public List<Map> addQuestData(){
+        return queryDataList
     }
 
     void deleteIfRowsExceeded(){
