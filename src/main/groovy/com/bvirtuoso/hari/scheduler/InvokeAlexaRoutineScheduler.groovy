@@ -61,6 +61,7 @@ class InvokeAlexaRoutineScheduler {
     @Value("\${voiceMonkey.hallAnnouncement}") String hallAnnouncement
     @Value("\${voiceMonkey.entertainment.play}") String playTv
     @Value("\${voiceMonkey.entertainment.pause}") String pauseTv
+//    @Value("\${app.mobile.operateTermuxCharger}") String operateTermuxCharger
 
     private boolean alreadyAnnouncedPleaseWalk = false;
     private int reactTimeForAnnouncement = 0
@@ -107,6 +108,16 @@ class InvokeAlexaRoutineScheduler {
         log.debug("Announcing drink water")
         apiInvoker.invokeVoiceMonkeyApi(drinkWater)
     }
+
+    //Able to charge the mobile once the charge percentage is down.
+    /*@Scheduled(cron = "1 0/15 * * * *")
+    public void operateChargerForTermuxMobileMI(){
+        try {
+            apiInvoker.invokeVoiceMonkeyApi(operateTermuxCharger)
+        }catch(Exception e){
+            println("Termux API to operate charger is temporarily down")
+        }
+    }*/
 
     @Scheduled(cron = "0 0 10-23/1 * * *")
     public void tellTime(){
