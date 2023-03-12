@@ -1,5 +1,7 @@
 server:
-  port: 8071
+  port: 8085
+  servlet:
+    context-path: /alexa-voice-monkey
 voiceMonkey:
   fan:
     turnOnOrOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-fan-monkey&announcement=test
@@ -29,6 +31,8 @@ logging:
   config: classpath:logback-spring.xml
 
 spring:
+  application:
+    name: alexa-voice-monkey-service
   datasource:
     url: jdbc:mysql://192.168.29.91:3306/personal?reconnect=true
     username: hariprasad
@@ -39,6 +43,7 @@ spring:
     hibernate:
       ddl-auto: update
     defer-datasource-initialization: true
+
   #    To load the data
   #  sql:
   #    init:
@@ -48,3 +53,7 @@ spring:
 #      enabled: true
 #      settings:
 #        web-allow-others: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka
