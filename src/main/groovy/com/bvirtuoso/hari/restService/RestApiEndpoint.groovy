@@ -34,6 +34,7 @@ class RestApiEndpoint {
 
     @Value("\${voiceMonkey.entertainment.turnOff}") String turnOffEntertainment;
     @Value("\${voiceMonkey.entertainment.turnOn}") String turnOnEntertainment;
+    @Value("\${voiceMonkey.hallAnnouncement}") String hallAnnouncement
 
     private String harshaAvailable = "unavailable"
     private List<DishInfo> dishInfos = new ArrayList<>()
@@ -172,20 +173,37 @@ class RestApiEndpoint {
     @GetMapping("/tvOn")
     @ResponseBody
     public void tvOn(HttpServletRequest request) {
-        apiInvoker.invokeApi(turnOnEntertainment);
-        //TvOnOff tvOnOff1 = tvOnOffRepository.getLastRow()
-        TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
-        tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
-        tvOnOffEntity.setTvStatus(true);
-        deleteIfRowsExceeded();
-        tvOnOffRepository.save(tvOnOffEntity);
+        if(harshaAvailable == "available"){
+            TvOnOffEntity lastTimeTvStatus = tvOnOffRepository.getLastRow()
+            if(!lastTimeTvStatus.getTvStatus()){
+                Duration durationFromLastTimeTvOn = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), LocalDateTime.now());
+                Duration tvCanOnAfterThisDuration = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), lastTimeTvStatus.getActivityTime().toLocalDateTime().plusMinutes(5))
+                int comparison = durationFromLastTimeTvOn <=> tvCanOnAfterThisDuration;
+                if(comparison > 0){
+                    apiInvoker.invokeApi(turnOnEntertainment);
+                    TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
+                    tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
+                    tvOnOffEntity.setTvStatus(true);
+                    deleteIfRowsExceeded();
+                    tvOnOffRepository.save(tvOnOffEntity);
+                    log.debug("Turning on TV");
+                }else{
+                    apiInvoker.invokeApi(hallAnnouncement+ "5 minutes wait cheyyara hihi")
+                    log.debug("Giving please wait message to turn on tv until 5 minutes");
+                }
+
+            }
+        }else{
+            apiInvoker.invokeApi(turnOnEntertainment);
+        }
+
     }
 
     @GetMapping("/tvOff")
     @ResponseBody
     public void tvOff(HttpServletRequest request) {
         apiInvoker.invokeApi(turnOffEntertainment);
-        //TvOnOff tvOnOff1 = tvOnOffRepository.getLastRow()
+        TvOnOffEntity lastTimeTvStatus = tvOnOffRepository.getLastRow()
         TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
         tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
         tvOnOffEntity.setTvStatus(false);
@@ -195,7 +213,7 @@ class RestApiEndpoint {
 
     @GetMapping("/tvOnOrOffDuration")
     @ResponseBody
-    public OnOrOffDuration getTvOnOrOff(HttpServletRequest request) {
+    public OnOrOffDuration getTvOnOrOffDuration(HttpServletRequest request) {
 
         TvOnOffEntity tvOnOffEntity = tvOnOffRepository.getLastRow();
         Duration duration = Duration.between(tvOnOffEntity.getActivityTime().toLocalDateTime(), LocalDateTime.now());

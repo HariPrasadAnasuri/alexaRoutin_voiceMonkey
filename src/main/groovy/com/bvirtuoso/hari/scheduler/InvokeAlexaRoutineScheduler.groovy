@@ -3,28 +3,25 @@ package com.bvirtuoso.hari.scheduler
 import com.bvirtuoso.hari.api.ApiInvoker
 import com.bvirtuoso.hari.model.DishInfo
 import com.bvirtuoso.hari.model.HariSchedule
-import com.bvirtuoso.hari.model.OnOrOffDuration
 import com.bvirtuoso.hari.model.PersonInfo
 import com.bvirtuoso.hari.model.PersonalSchedule
 import com.bvirtuoso.hari.model.jpa.DishInfoJpa
 import com.bvirtuoso.hari.model.jpa.HealthInfoJpa
+import com.bvirtuoso.hari.model.jpa.TvOnOffEntity
 import com.bvirtuoso.hari.repository.DishInfoRepository
 import com.bvirtuoso.hari.repository.HealthInfoRepository
+import com.bvirtuoso.hari.repository.TvOnOffRepository
 import com.bvirtuoso.hari.restService.RestApiEndpoint
 import com.bvirtuoso.hari.service.MotionBasedTask
 import org.apache.juli.logging.Log
 import org.apache.juli.logging.LogFactory
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
-import org.springframework.http.HttpEntity
-import org.springframework.http.HttpHeaders
-import org.springframework.http.HttpMethod
-import org.springframework.http.MediaType
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.client.RestTemplate
 
+import java.sql.Timestamp
 import java.time.Duration
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -43,6 +40,7 @@ class InvokeAlexaRoutineScheduler {
 
     final private RestTemplate restTemplate
     private final ApiInvoker apiInvoker
+    private final TvOnOffRepository tvOnOffRepository
 
     final private RestApiEndpoint restApiEndpoint
 
@@ -68,6 +66,7 @@ class InvokeAlexaRoutineScheduler {
     private boolean forReactTimeForAnnouncement = false
     private int reactTimeAfterPause = 0
     private boolean forReactTimeAfterPause = false
+    private boolean warnedBeforeTurnOffTv = false;
 
     private final DishInfoRepository dishInfoRepository
     private final HealthInfoRepository healthInfoRepository
@@ -83,7 +82,7 @@ class InvokeAlexaRoutineScheduler {
                                         DishInfoRepository dishInfoRepository,
                                         HealthInfoRepository healthInfoRepository,
                                        @Value("\${voiceMonkey.hariAnnouncement}") String hariAnnouncement,
-                                       final RestApiEndpoint restApiEndpoint){
+                                       final RestApiEndpoint restApiEndpoint, final TvOnOffRepository tvOnOffRepository){
         log.debug("Scheduler initialized")
         this.restTemplate = restTemplate
         this.apiInvoker = apiInvoker
@@ -92,6 +91,7 @@ class InvokeAlexaRoutineScheduler {
         this.hariAnnouncement = hariAnnouncement
         this.apiInvoker.invokeVoiceMonkeyApi(hariAnnouncement + "Hey hari, application is deployed")
         this.restApiEndpoint = restApiEndpoint
+        this.tvOnOffRepository = tvOnOffRepository
 
     }
 
@@ -207,7 +207,7 @@ class InvokeAlexaRoutineScheduler {
         reactTimeAfterPause++
     }
 
-    @Scheduled(cron = "0/2 * * * * *")
+    //@Scheduled(cron = "0/2 * * * * *")
     void harshaIdleCheck(){
         String availability = restApiEndpoint.getHarshaAvailability()
         if(availability.equals("available")){
@@ -265,38 +265,36 @@ class InvokeAlexaRoutineScheduler {
         }
     }
 
-    //@Scheduled(cron = "0 0/1 15-17 * * *")
+    @Scheduled(cron = "0/1 * * * * *")
     public void tvOnOrOff(){
-        //log.debug("Announcing tvOnOff")
-        //println("Inside tvOnOrOff method")
-        //After setting user agent only able to call the API
-        // Always check the IDE pointing proper Java Installation or not, otherwise will get trust store keys issue.
-        HttpHeaders headers = new HttpHeaders();
-        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-        headers.add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
-        HttpEntity<String> entity = new HttpEntity<>()<String>(headers);
-        OnOrOffDuration onOrOffDuration = restTemplate.exchange(onOffDuration, HttpMethod.GET, entity, OnOrOffDuration.class).getBody()
-        long minutes = onOrOffDuration.getDuration().toMinutes()
+        TvOnOffEntity lastTimeTvStatus = tvOnOffRepository.getLastRow()
+        String availability = restApiEndpoint.getHarshaAvailability()
+        if(availability == "available"){
+            if(lastTimeTvStatus.getTvStatus()){
+                Duration durationFromLastTimeTvOn = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), LocalDateTime.now());
+                Duration tvCanOnAfterThisDuration = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), lastTimeTvStatus.getActivityTime().toLocalDateTime().plusMinutes(15))
+                int comparison = durationFromLastTimeTvOn <=> tvCanOnAfterThisDuration;
+                if(comparison > 0){
+                    if(!warnedBeforeTurnOffTv){
+                        warnedBeforeTurnOffTv = true
+                        log.debug("Give warning before turn off TV");
+                        apiInvoker.invokeApi(hallAnnouncement+ "Harsha it is already 15 minutes since you on the TV, will trun off the TV in next minute")
+                    }else{
+                        warnedBeforeTurnOffTv = false
+                        apiInvoker.invokeApi(turnOffEntertainment);
 
-        if(onOrOffDuration.isTvOn()){
-            if(minutes > 10){
-                this.apiInvoker.invokeVoiceMonkeyApi(hariAnnouncement + "Arey yar please walk in between")
+                        TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
+                        tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
+                        tvOnOffEntity.setTvStatus(false);
+                        tvOnOffRepository.save(tvOnOffEntity);
+                        log.debug("Turning off TV");
+                    }
+                }
             }
         }
-
-        /*if(onOrOffDuration.isTvOn()){
-            if(minutes > 120){
-                restTemplate.exchange(turnOffTv, HttpMethod.GET, entity, OnOrOffDuration.class).getBody()
-            }
-        }else{
-            if(minutes > 30){
-                restTemplate.exchange(turnOnTv, HttpMethod.GET, entity, OnOrOffDuration.class).getBody()
-            }
-        }*/
-        println("onOrOffDuration ${onOrOffDuration}")
     }
 
-    @Scheduled(cron = "0 0 2 * * *")
+    //@Scheduled(cron = "0 0 2 * * *")
     void resetSchedules(){
         log.debug("resetSchedules() called")
         HariSchedule hariScheduleObj = new HariSchedule()
@@ -305,7 +303,7 @@ class InvokeAlexaRoutineScheduler {
         hariSchedules =  hariScheduleObj.prepareScheduledTimes(scheduledFrom);
     }
 
-    @Scheduled(cron = "0 0 7 * * *")
+    //@Scheduled(cron = "0 0 7 * * *")
     void startHariScheduleForTheDay(){
         log.debug("startHariScheduleForTheDay() called")
         LocalTime scheduledFrom = LocalTime.now().plusHours(1)
