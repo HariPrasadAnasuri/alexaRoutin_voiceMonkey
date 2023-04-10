@@ -265,7 +265,7 @@ class InvokeAlexaRoutineScheduler {
         }
     }
 
-    @Scheduled(cron = "0/1 * * * * *")
+    @Scheduled(cron = "0 0/1 * * * *")
     public void tvOnOrOff(){
         TvOnOffEntity lastTimeTvStatus = tvOnOffRepository.getLastRow()
         String availability = restApiEndpoint.getHarshaAvailability()
@@ -278,7 +278,7 @@ class InvokeAlexaRoutineScheduler {
                     if(!warnedBeforeTurnOffTv){
                         warnedBeforeTurnOffTv = true
                         log.debug("Give warning before turn off TV");
-                        apiInvoker.invokeApi(hallAnnouncement+ "Harsha it is already 15 minutes since you on the TV, will trun off the TV in next minute")
+                        apiInvoker.invokeApi(hallAnnouncement+ "Harsha it is already 15 minutes since you on the TV, will turn off the TV in next minute")
                     }else{
                         warnedBeforeTurnOffTv = false
                         apiInvoker.invokeApi(turnOffEntertainment);

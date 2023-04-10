@@ -3,20 +3,21 @@ server:
   servlet:
     context-path: /alexa-voice-monkey
 voiceMonkey:
+  host: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5
   fan:
-    turnOnOrOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-fan-monkey&announcement=test
+    turnOnOrOff: ${voiceMonkey.host}&monkey=turn-on-fan-monkey&announcement=test
   entertainment:
-    turnOff: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-entertainment&announcement=Now enjoy by doing your work
-    turnOn: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-entertainment-1&announcement=Enjoy, but take care
-    play: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=play-tv-monkey&announcement=play tv
-    pause: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=pause-tv-monkey&announcement=pause tv
-  tellTime: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-time&announcement=test
-  tellDate: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=tell-date&announcement=test
-  drinkWater: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement&announcement=Drink water please
-  hariAnnouncement: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkey-announcement-for-hari&announcement=
-  hallAnnouncement: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=monkeyannouncementforhall&announcement=
-  turnOnDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-on-deco-light-monkey&announcement=n
-  turnOffDecoLight: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5&monkey=turn-off-deco-light-monkey&announcement=f
+    turnOff: ${voiceMonkey.host}&monkey=turn-off-entertainment&announcement=Now enjoy by doing your work
+    turnOn: ${voiceMonkey.host}&monkey=turn-on-entertainment-1&announcement=Enjoy, but take care
+    play: ${voiceMonkey.host}&monkey=play-tv-monkey&announcement=play tv
+    pause: ${voiceMonkey.host}&monkey=pause-tv-monkey&announcement=pause tv
+  tellTime: ${voiceMonkey.host}&monkey=tell-time&announcement=test
+  tellDate: ${voiceMonkey.host}&monkey=tell-date&announcement=test
+  drinkWater: ${voiceMonkey.host}&monkey=monkey-announcement&announcement=Drink water please
+  hariAnnouncement: ${voiceMonkey.host}&monkey=monkey-announcement-for-hari&announcement=
+  hallAnnouncement: ${voiceMonkey.host}&monkey=monkeyannouncementforhall&announcement=
+  turnOnDecoLight: ${voiceMonkey.host}&monkey=turn-on-deco-light-monkey&announcement=n
+  turnOffDecoLight: ${voiceMonkey.host}&monkey=turn-off-deco-light-monkey&announcement=f
 
 app:
   bvirtuoso:

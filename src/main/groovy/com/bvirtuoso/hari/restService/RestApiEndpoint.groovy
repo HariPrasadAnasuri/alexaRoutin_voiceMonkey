@@ -188,7 +188,7 @@ class RestApiEndpoint {
                     tvOnOffRepository.save(tvOnOffEntity);
                     log.debug("Turning on TV");
                 }else{
-                    apiInvoker.invokeApi(hallAnnouncement+ "5 minutes wait cheyyara hihi")
+                    apiInvoker.invokeApi(hallAnnouncement+ "5 minutes wait cheyyara... hihi")
                     log.debug("Giving please wait message to turn on tv until 5 minutes");
                 }
 
