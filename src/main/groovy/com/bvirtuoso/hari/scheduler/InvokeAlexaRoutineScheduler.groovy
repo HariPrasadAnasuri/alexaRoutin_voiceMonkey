@@ -59,6 +59,8 @@ class InvokeAlexaRoutineScheduler {
     @Value("\${voiceMonkey.hallAnnouncement}") String hallAnnouncement
     @Value("\${voiceMonkey.entertainment.play}") String playTv
     @Value("\${voiceMonkey.entertainment.pause}") String pauseTv
+    @Value("\${voiceMonkey.turnOnAc}") String turnOnAc
+    @Value("\${voiceMonkey.turnOffAc}") String turnOffAc
 //    @Value("\${app.mobile.operateTermuxCharger}") String operateTermuxCharger
 
     private boolean alreadyAnnouncedPleaseWalk = false;
@@ -107,6 +109,18 @@ class InvokeAlexaRoutineScheduler {
     public void drinkWater(){
         log.debug("Announcing drink water")
         apiInvoker.invokeVoiceMonkeyApi(drinkWater)
+    }
+
+    @Scheduled(cron = "0 0 * * * *")
+    public void turnOnAc(){
+        log.debug("Turning on AC")
+        apiInvoker.invokeVoiceMonkeyApi(turnOnAc)
+    }
+
+    @Scheduled(cron = "0 5 * * * *")
+    public void turnOffAc(){
+        log.debug("Turning off AC")
+        apiInvoker.invokeVoiceMonkeyApi(turnOffAc)
     }
 
     //Able to charge the mobile once the charge percentage is down.

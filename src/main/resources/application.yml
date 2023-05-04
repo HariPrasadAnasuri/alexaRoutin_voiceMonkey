@@ -18,6 +18,8 @@ voiceMonkey:
   hallAnnouncement: ${voiceMonkey.host}&monkey=monkeyannouncementforhall&announcement=
   turnOnDecoLight: ${voiceMonkey.host}&monkey=turn-on-deco-light-monkey&announcement=n
   turnOffDecoLight: ${voiceMonkey.host}&monkey=turn-off-deco-light-monkey&announcement=f
+  turnOnAc: ${voiceMonkey.host}&monkey=turn-on-ac-monkey&announcement=Hello%20monkey
+  turnOffAc: ${voiceMonkey.host}&monkey=turn-off-ac-monkey&announcement=Hello%20monkey
 
 app:
   bvirtuoso:
