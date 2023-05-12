@@ -61,6 +61,8 @@ class InvokeAlexaRoutineScheduler {
     @Value("\${voiceMonkey.entertainment.pause}") String pauseTv
     @Value("\${voiceMonkey.turnOnAc}") String turnOnAc
     @Value("\${voiceMonkey.turnOffAc}") String turnOffAc
+    @Value("\${voiceMonkey.turnOnPanasonicAc}") String turnOnPanasonicAc
+    @Value("\${voiceMonkey.turnOffPanasonicAc}") String turnOffPanasonicAc
 //    @Value("\${app.mobile.operateTermuxCharger}") String operateTermuxCharger
 
     private boolean alreadyAnnouncedPleaseWalk = false;
@@ -80,6 +82,8 @@ class InvokeAlexaRoutineScheduler {
     private boolean justAnnouncedAboutWalking = false
     private int warningCounterToSwitchOffTv = 0
 
+    private boolean isPanasonicAcOn = false;
+
     public InvokeAlexaRoutineScheduler(RestTemplate restTemplate, ApiInvoker apiInvoker,
                                         DishInfoRepository dishInfoRepository,
                                         HealthInfoRepository healthInfoRepository,
@@ -94,6 +98,8 @@ class InvokeAlexaRoutineScheduler {
         this.apiInvoker.invokeVoiceMonkeyApi(hariAnnouncement + "Hey hari, application is deployed")
         this.restApiEndpoint = restApiEndpoint
         this.tvOnOffRepository = tvOnOffRepository
+
+
 
     }
 
@@ -121,6 +127,21 @@ class InvokeAlexaRoutineScheduler {
     public void turnOffAc(){
         log.debug("Turning off AC")
         apiInvoker.invokeVoiceMonkeyApi(turnOffAc)
+    }
+
+    @Scheduled(cron = "0 0/30 0-07 * * *")
+    public void turnOnPanasonicAc(){
+        log.debug("Turning on Panasonic AC")
+        apiInvoker.invokeVoiceMonkeyApi(turnOnPanasonicAc)
+
+        Timer timer = new Timer();
+        int delay = 300000;
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                apiInvoker.invokeVoiceMonkeyApi(turnOffPanasonicAc)
+            }
+        }, delay);
     }
 
     //Able to charge the mobile once the charge percentage is down.

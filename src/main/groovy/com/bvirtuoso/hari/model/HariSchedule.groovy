@@ -14,11 +14,11 @@ class HariSchedule extends PersonalSchedule{
         LocalTime lunchTime = LocalTime.of(13, 15)
         LocalTime afterLunchNap = LocalTime.of(14, 15)
         LocalTime dinnerTime = LocalTime.of(20, 10)
-        fixedSchedules = [
+        /*fixedSchedules = [
                 new PersonalSchedule(taskDesc: "Lunch time", time: lunchTime, duration: Duration.ofMinutes(60)),
                 new PersonalSchedule(taskDesc: "Take a quick nap", time: afterLunchNap, duration: Duration.ofMinutes(30)),
                 new PersonalSchedule(taskDesc: "Dinner time", time: dinnerTime, duration: Duration.ofMinutes(60))
-        ]
+        ]*/
         variableSchedules = [
                 new PersonalSchedule(taskDesc: "Do exercise", duration: Duration.ofMinutes(30)),
                 new PersonalSchedule(taskDesc: "Do bath", duration: Duration.ofMinutes(25)),
@@ -52,7 +52,7 @@ class HariSchedule extends PersonalSchedule{
         }
         return finalAdjustedSchedules*/
     }
-    private LocalTime checkIsItCrossingFixedTime(LocalTime scheduledFrom, LocalTime scheduledUntil, PersonalSchedule schedule){
+    /*private LocalTime checkIsItCrossingFixedTime(LocalTime scheduledFrom, LocalTime scheduledUntil, PersonalSchedule schedule){
         LocalTime untilTime = scheduledFrom
         if(fixedSchedules.any(scheduleObj -> (!scheduleObj.isAlreadyAdded))) {
             fixedSchedules.any { fixedSchedule ->
@@ -61,12 +61,12 @@ class HariSchedule extends PersonalSchedule{
                     LocalTime fixedScheduleUntil = fixedSchedule.getTime().plusSeconds(fixedSchedule.getDuration().getSeconds())
                     if (scheduledFrom.isBefore(fixedScheduleFrom)) {
                         if (scheduledUntil.isBefore(fixedScheduleFrom)) {
-                            /*If time slot is before the fixed time slot*/
+                            //If time slot is before the fixed time slot
                             finalAdjustedSchedules.add(schedule)
                             untilTime = untilTime.plusMinutes((Integer) (schedule.getDuration().getSeconds() / 60))
                             return true
                         } else if (scheduledUntil.isAfter(fixedScheduleFrom)) {
-                            /*If time slot is before and after of fixed time slot from*/
+                            //If time slot is before and after of fixed time slot from
                             long calcDurationBetweenScheduleFromAndFixedFrom = scheduledFrom.until(fixedScheduleFrom, ChronoUnit.MINUTES)
                             PersonalSchedule separatedTask_begin = new PersonalSchedule(taskDesc: schedule.getTaskDesc(), duration: Duration.ofMinutes(calcDurationBetweenScheduleFromAndFixedFrom))
                             finalAdjustedSchedules.add(separatedTask_begin)
@@ -83,7 +83,7 @@ class HariSchedule extends PersonalSchedule{
                             fixedSchedule.setAlreadyAdded(true)
                             return true
                         } else if (scheduledUntil.isAfter(fixedScheduleUntil)) {
-                            /*If time slot is beyond the fixed time slot*/
+                            //If time slot is beyond the fixed time slot
                             long calcDurationBetweenScheduleFromAndFixedFrom = scheduledFrom.until(fixedScheduleFrom, ChronoUnit.MINUTES)
                             PersonalSchedule separatedTask_begin = new PersonalSchedule(taskDesc: schedule.getTaskDesc(), duration: Duration.ofMinutes(calcDurationBetweenScheduleFromAndFixedFrom))
                             finalAdjustedSchedules.add(separatedTask_begin)
@@ -102,7 +102,7 @@ class HariSchedule extends PersonalSchedule{
                         }
                     } else if (scheduledFrom.isAfter(fixedScheduleFrom)) {
                         if (scheduledUntil.isBefore(fixedScheduleUntil)) {
-                            /*Time slot is between the,  static from and until*/
+                            //Time slot is between the,  static from and until
                             finalAdjustedSchedules.add(fixedSchedule)
                             finalAdjustedSchedules.add(schedule)
                             untilTime = untilTime.plusMinutes((Integer) (fixedSchedule.getDuration().getSeconds() / 60))
@@ -112,18 +112,18 @@ class HariSchedule extends PersonalSchedule{
                             return true
                         } else if (scheduledUntil.isAfter(fixedScheduleUntil)) {
                             if (scheduledFrom.isAfter(fixedScheduleUntil)) {
-                                /*if time slot is after fixed until*/
+                                //if time slot is after fixed until
                                 long timeGap = fixedScheduleUntil.until(scheduledFrom, ChronoUnit.MINUTES)
                                 finalAdjustedSchedules.add(fixedSchedule)
                                 finalAdjustedSchedules.add(schedule)
                                 untilTime = untilTime.plusMinutes((Integer) (fixedSchedule.getDuration().getSeconds() / 60))
-                                /*Todo: doubtful*/
+                                *//*Todo: doubtful*//*
                                 untilTime = untilTime.plusMinutes((Integer) (schedule.getDuration().getSeconds() / 60) - timeGap)
 
                                 fixedSchedule.setAlreadyAdded(true)
                                 return true
                             } else if (scheduledFrom.isBefore(fixedScheduleUntil)) {
-                                /*if time slot crossing fixed Until*/
+                                //if time slot crossing fixed Until
                                 finalAdjustedSchedules.add(fixedSchedule)
                                 finalAdjustedSchedules.add(schedule)
                                 untilTime = untilTime.plusMinutes((Integer) (fixedSchedule.getDuration().getSeconds() / 60))
@@ -141,13 +141,13 @@ class HariSchedule extends PersonalSchedule{
             untilTime = untilTime.plusMinutes((Integer) (schedule.getDuration().getSeconds() / 60))
         }
         return untilTime.plusMinutes(1)
-    }
+    }*/
 
-    Boolean getIsAlreadyChecked() {
+    /*Boolean getIsAlreadyChecked() {
         return isAlreadyChecked
     }
 
     void setIsAlreadyChecked(Boolean isAlreadyChecked) {
         this.isAlreadyChecked = isAlreadyChecked
-    }
+    }*/
 }

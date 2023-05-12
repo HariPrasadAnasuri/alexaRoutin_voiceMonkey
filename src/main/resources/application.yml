@@ -20,12 +20,15 @@ voiceMonkey:
   turnOffDecoLight: ${voiceMonkey.host}&monkey=turn-off-deco-light-monkey&announcement=f
   turnOnAc: ${voiceMonkey.host}&monkey=turn-on-ac-monkey&announcement=Hello%20monkey
   turnOffAc: ${voiceMonkey.host}&monkey=turn-off-ac-monkey&announcement=Hello%20monkey
+  turnOnPanasonicAc: ${voiceMonkey.host}&monkey=turn-on-panasonic-ac-monkey&announcement=Hello%20monkey
+  turnOffPanasonicAc: ${voiceMonkey.host}&monkey=turn-off-panasonic-ac-monkey&announcement=Hello%20monkey
 
 app:
   bvirtuoso:
     turnOffTv: http://www.bvirtuoso.com/tvOff
     turnOnTv: http://www.bvirtuoso.com/tvOn
     onOffDuration: http://bvirtuoso.herokuapp.com/tvOnOrOffDuration
+    ngrokUrl: https://api.ngrok.com/tunnels
 #  Following url for termux charges is by the python application which is got deployed in MI Mobile.
 #  Based on percentage levels either turn on the charger or off the charger.
 #  mobile:

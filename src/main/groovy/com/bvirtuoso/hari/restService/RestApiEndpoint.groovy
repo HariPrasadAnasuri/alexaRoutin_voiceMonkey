@@ -36,6 +36,8 @@ class RestApiEndpoint {
     @Value("\${voiceMonkey.entertainment.turnOn}") String turnOnEntertainment;
     @Value("\${voiceMonkey.hallAnnouncement}") String hallAnnouncement
 
+    @Value("\${app.bvirtuoso.ngrokUrl}") String ngrokUrl
+
     private String harshaAvailable = "unavailable"
     private List<DishInfo> dishInfos = new ArrayList<>()
     private List<PersonInfo> personInfos = new ArrayList<>()
@@ -67,6 +69,12 @@ class RestApiEndpoint {
         this.countryRepository = countryRepository
         this.capitalRepository = capitalRepository
         this.gkQuestionRepository = gkQuestionRepository
+
+        def ngrokResponse = apiInvoker.getNgrokUrl("https://api.ngrok.com/tunnels");
+        log.debug("ngrok URL fetched: "+ ngrokResponse.tunnels[0].public_url)
+        def responseFromLambda = apiInvoker.setNgrokUrlToLambdaFunction(
+                "https://haaiv4ssyv5urvwzicvhgqijyu0kjueo.lambda-url.us-east-1.on.aws/", ngrokResponse.tunnels[0].public_url)
+
     }
 
     @GetMapping("/setHarshaAvailability")
