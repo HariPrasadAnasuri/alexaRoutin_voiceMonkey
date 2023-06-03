@@ -121,21 +121,38 @@ class InvokeAlexaRoutineScheduler {
     public void turnOnAc(){
         log.debug("Turning on AC")
         apiInvoker.invokeVoiceMonkeyApi(turnOnAc)
+
+        Timer timer = new Timer();
+        int delay = 900000;
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                apiInvoker.invokeVoiceMonkeyApi(turnOffAc)
+            }
+        }, delay);
+        Timer timer1 = new Timer();
+        timer1.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                apiInvoker.invokeVoiceMonkeyApi(turnOffAc)
+            }
+        }, delay*2);
+        Timer timer2 = new Timer();
+        timer2.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                apiInvoker.invokeVoiceMonkeyApi(turnOffAc)
+            }
+        }, delay*3);
     }
 
-    @Scheduled(cron = "0 5 * * * *")
-    public void turnOffAc(){
-        log.debug("Turning off AC")
-        apiInvoker.invokeVoiceMonkeyApi(turnOffAc)
-    }
-
-    @Scheduled(cron = "0 0/30 0-07 * * *")
+    @Scheduled(cron = "0 0/30 0-09 * * *")
     public void turnOnPanasonicAc(){
         log.debug("Turning on Panasonic AC")
         apiInvoker.invokeVoiceMonkeyApi(turnOnPanasonicAc)
 
         Timer timer = new Timer();
-        int delay = 300000;
+        int delay = 900000;
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
