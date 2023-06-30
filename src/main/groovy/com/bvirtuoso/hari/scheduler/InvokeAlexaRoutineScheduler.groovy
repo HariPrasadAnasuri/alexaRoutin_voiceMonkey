@@ -13,6 +13,11 @@ import com.bvirtuoso.hari.repository.HealthInfoRepository
 import com.bvirtuoso.hari.repository.TvOnOffRepository
 import com.bvirtuoso.hari.restService.RestApiEndpoint
 import com.bvirtuoso.hari.service.MotionBasedTask
+import com.bvirtuoso.hari.service.NgrokService
+import com.sun.jna.platform.win32.W32Service
+import com.sun.jna.platform.win32.W32ServiceManager
+import com.sun.jna.platform.win32.Win32Exception
+import com.sun.jna.platform.win32.Winsvc
 import org.apache.juli.logging.Log
 import org.apache.juli.logging.LogFactory
 import org.springframework.beans.factory.annotation.Value
@@ -41,6 +46,7 @@ class InvokeAlexaRoutineScheduler {
     final private RestTemplate restTemplate
     private final ApiInvoker apiInvoker
     private final TvOnOffRepository tvOnOffRepository
+    private final NgrokService ngrokService
 
     final private RestApiEndpoint restApiEndpoint
 
@@ -88,7 +94,8 @@ class InvokeAlexaRoutineScheduler {
                                         DishInfoRepository dishInfoRepository,
                                         HealthInfoRepository healthInfoRepository,
                                        @Value("\${voiceMonkey.hariAnnouncement}") String hariAnnouncement,
-                                       final RestApiEndpoint restApiEndpoint, final TvOnOffRepository tvOnOffRepository){
+                                       final RestApiEndpoint restApiEndpoint, final TvOnOffRepository tvOnOffRepository,
+                                       final NgrokService ngrokService){
         log.debug("Scheduler initialized")
         this.restTemplate = restTemplate
         this.apiInvoker = apiInvoker
@@ -98,7 +105,7 @@ class InvokeAlexaRoutineScheduler {
         this.apiInvoker.invokeVoiceMonkeyApi(hariAnnouncement + "Hey hari, application is deployed")
         this.restApiEndpoint = restApiEndpoint
         this.tvOnOffRepository = tvOnOffRepository
-
+        this.ngrokService = ngrokService
 
 
     }
@@ -123,7 +130,7 @@ class InvokeAlexaRoutineScheduler {
         apiInvoker.invokeVoiceMonkeyApi(turnOnAc)
 
         Timer timer = new Timer();
-        int delay = 900000;
+        int delay = 300000;
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -146,7 +153,7 @@ class InvokeAlexaRoutineScheduler {
         }, delay*3);
     }
 
-    @Scheduled(cron = "0 0/30 0-09 * * *")
+    //@Scheduled(cron = "0 0/30 0-09 * * *")
     public void turnOnPanasonicAc(){
         log.debug("Turning on Panasonic AC")
         apiInvoker.invokeVoiceMonkeyApi(turnOnPanasonicAc)
@@ -390,5 +397,10 @@ class InvokeAlexaRoutineScheduler {
                 }
             }
         }
+    }
+
+    @Scheduled(cron = "15 0/20 0 * * *")
+    public void tryToKeepNgrokActive(){
+        ngrokService.getNgrokUrl();
     }
 }

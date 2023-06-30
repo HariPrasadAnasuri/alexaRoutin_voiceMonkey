@@ -29,6 +29,8 @@ app:
     turnOnTv: http://www.bvirtuoso.com/tvOn
     onOffDuration: http://bvirtuoso.herokuapp.com/tvOnOrOffDuration
     ngrokUrl: https://api.ngrok.com/tunnels
+  ipv6:
+    startString: 2405:201
 #  Following url for termux charges is by the python application which is got deployed in MI Mobile.
 #  Based on percentage levels either turn on the charger or off the charger.
 #  mobile:

@@ -12,6 +12,7 @@ import com.bvirtuoso.hari.repository.CountryRepository
 import com.bvirtuoso.hari.repository.GkQuestionRepository
 import com.bvirtuoso.hari.repository.MemberRepository
 import com.bvirtuoso.hari.repository.TvOnOffRepository
+import com.bvirtuoso.hari.service.NgrokService
 import org.apache.juli.logging.Log
 import org.apache.juli.logging.LogFactory
 import org.springframework.beans.factory.annotation.Value
@@ -35,6 +36,7 @@ class RestApiEndpoint {
     @Value("\${voiceMonkey.entertainment.turnOff}") String turnOffEntertainment;
     @Value("\${voiceMonkey.entertainment.turnOn}") String turnOnEntertainment;
     @Value("\${voiceMonkey.hallAnnouncement}") String hallAnnouncement
+    @Value("\${app.ipv6.startString}") String ipv6StartString
 
     @Value("\${app.bvirtuoso.ngrokUrl}") String ngrokUrl
 
@@ -42,6 +44,7 @@ class RestApiEndpoint {
     private List<DishInfo> dishInfos = new ArrayList<>()
     private List<PersonInfo> personInfos = new ArrayList<>()
     private List<Map> queryDataList = [];
+    private String ngrokUrl = "";
 
     final private RestTemplate restTemplate
     private final ApiInvoker apiInvoker
@@ -50,6 +53,7 @@ class RestApiEndpoint {
     private final TvOnOffRepository tvOnOffRepository
     private final CountryRepository countryRepository
     private final CapitalRepository capitalRepository
+    private final NgrokService ngrokService
 
     private boolean isPleaseWalkAnnounced = false
 
@@ -59,7 +63,8 @@ class RestApiEndpoint {
                            TvOnOffRepository tvOnOffRepository,
                            CountryRepository countryRepository,
                            CapitalRepository capitalRepository,
-                           GkQuestionRepository gkQuestionRepository
+                           GkQuestionRepository gkQuestionRepository,
+                           NgrokService ngrokService
     ){
         log.debug("Scheduler initialized")
         this.restTemplate = restTemplate
@@ -69,11 +74,17 @@ class RestApiEndpoint {
         this.countryRepository = countryRepository
         this.capitalRepository = capitalRepository
         this.gkQuestionRepository = gkQuestionRepository
+        this.ngrokService = ngrokService
 
-        def ngrokResponse = apiInvoker.getNgrokUrl("https://api.ngrok.com/tunnels");
-        log.debug("ngrok URL fetched: "+ ngrokResponse.tunnels[0].public_url)
-        def responseFromLambda = apiInvoker.setNgrokUrlToLambdaFunction(
-                "https://haaiv4ssyv5urvwzicvhgqijyu0kjueo.lambda-url.us-east-1.on.aws/", ngrokResponse.tunnels[0].public_url)
+        ngrokUrl = ngrokService.getNgrokUrl();
+        if(ngrokUrl){
+            log.debug("ngrok URL fetched: ${ngrokUrl}")
+        }else{
+
+        }
+
+        /*def responseFromLambda = apiInvoker.setNgrokUrlToLambdaFunction(
+                "https://haaiv4ssyv5urvwzicvhgqijyu0kjueo.lambda-url.us-east-1.on.aws/", ngrokUrl)*/
 
     }
 
@@ -310,6 +321,46 @@ class RestApiEndpoint {
         if(count > 100){
             tvOnOffRepository.delete(tvOnOffRepository.getFirstRow());
         }
+    }
+
+    @GetMapping("/getIpv6Address")
+    @ResponseBody
+    public String getIpv6Address(){
+        String ipv6Address = "";
+        try {
+            Enumeration<NetworkInterface> networkInterfaces = NetworkInterface.getNetworkInterfaces();
+            while (networkInterfaces.hasMoreElements()) {
+                NetworkInterface networkInterface = networkInterfaces.nextElement();
+                Enumeration<InetAddress> inetAddresses = networkInterface.getInetAddresses();
+                while (inetAddresses.hasMoreElements()) {
+                    InetAddress inetAddress = inetAddresses.nextElement();
+                    if (inetAddress.isLoopbackAddress() || !inetAddress.getHostAddress().contains(":")) {
+                        continue;
+                    }
+                    if (isPreferredIPv6Address(inetAddress)) {
+                        ipv6Address = inetAddress.getHostAddress()
+                        System.out.println("Preferred IPv6 Address: " + inetAddress.getHostAddress());
+                        break;
+                    }
+                }
+            }
+        } catch (SocketException e) {
+            e.printStackTrace();
+        }
+        return ipv6Address
+    }
+
+    private boolean isPreferredIPv6Address(InetAddress inetAddress) {
+        // Add your preferred conditions for selecting the IPv6 address
+        // Example: Select the address with a specific prefix or pattern
+        String hostAddress = inetAddress.getHostAddress();
+        return hostAddress.startsWith(ipv6StartString);
+    }
+
+    @GetMapping("/getNgrokUrl")
+    @ResponseBody
+    public String getNgrokUrl(){
+        return ngrokUrl
     }
 
 }
