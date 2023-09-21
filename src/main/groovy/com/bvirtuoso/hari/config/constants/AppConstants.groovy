@@ -60,4 +60,18 @@ public class AppConstants {
             this.text = text;
         }
     }
+    public enum TvControlType{
+        NEXT("NEXT"),
+        PREVIOUS("PREVIOUS"),
+        PAUSE("PAUSE")
+
+        private final String controlType
+
+        TvControlType(String controlType){
+            this.controlType = controlType
+        }
+        public int getControlType(){
+            return controlType
+        }
+    }
 }

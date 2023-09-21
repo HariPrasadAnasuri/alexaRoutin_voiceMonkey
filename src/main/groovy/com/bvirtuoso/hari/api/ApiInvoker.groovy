@@ -36,7 +36,7 @@ public class ApiInvoker {
   Object getNgrokUrl(String url){
     HttpHeaders headers = new HttpHeaders();
     headers.add("ngrok-version", "2")
-    headers.add("Authorization", "Bearer 2PJqDIbR1I76Jb3BijggUe0HJEy_41HZk6aT2WsJzt395DdSV");
+    headers.add("Authorization", "Bearer 2VVlye0MTLMamiwErGtD0iAj5h0_2SbHM3YK2YXAHeAroDEqA");
     headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
     //After setting user agent only able to call the API
     // Always check the IDE pointing proper Java Installation or not, otherwise will get trust store keys issue.

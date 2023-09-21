@@ -28,14 +28,18 @@ class NgrokService {
 
     String getNgrokUrl(){
         def ngrokResponse = apiInvoker.getNgrokUrl("https://api.ngrok.com/tunnels");
-        String ngrokUrl = ngrokResponse.tunnels[0].public_url
-        if(ngrokUrl){
+        String ngrokUrl
+        if(ngrokResponse.tunnels && ngrokResponse.tunnels[0] && ngrokResponse.tunnels[0].public_url){
+            ngrokUrl = ngrokResponse.tunnels[0].public_url
             log.debug("Ngrok URL: ${ngrokUrl}")
             return ngrokUrl;
         }else{
             restartNgrokService();
             ngrokResponse = apiInvoker.getNgrokUrl("https://api.ngrok.com/tunnels");
-            ngrokUrl = ngrokResponse.tunnels[0].public_url
+            if(ngrokResponse.tunnels && ngrokResponse.tunnels[0] && ngrokResponse.tunnels[0].public_url) {
+                ngrokUrl = ngrokResponse.tunnels[0].public_url
+                log.debug("Ngrok URL: ${ngrokUrl}")
+            }
             log.debug("Got the ngrok URL afer restarting the service: ${ngrokUrl}")
             return ngrokUrl
         }

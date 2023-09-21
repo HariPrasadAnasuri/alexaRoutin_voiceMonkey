@@ -14,10 +14,6 @@ import com.bvirtuoso.hari.repository.TvOnOffRepository
 import com.bvirtuoso.hari.restService.RestApiEndpoint
 import com.bvirtuoso.hari.service.MotionBasedTask
 import com.bvirtuoso.hari.service.NgrokService
-import com.sun.jna.platform.win32.W32Service
-import com.sun.jna.platform.win32.W32ServiceManager
-import com.sun.jna.platform.win32.Win32Exception
-import com.sun.jna.platform.win32.Winsvc
 import org.apache.juli.logging.Log
 import org.apache.juli.logging.LogFactory
 import org.springframework.beans.factory.annotation.Value
@@ -76,7 +72,7 @@ class InvokeAlexaRoutineScheduler {
     private boolean forReactTimeForAnnouncement = false
     private int reactTimeAfterPause = 0
     private boolean forReactTimeAfterPause = false
-    private boolean warnedBeforeTurnOffTv = false;
+    private boolean notYetWarned = true;
 
     private final DishInfoRepository dishInfoRepository
     private final HealthInfoRepository healthInfoRepository
@@ -123,8 +119,13 @@ class InvokeAlexaRoutineScheduler {
         log.debug("Announcing drink water")
         apiInvoker.invokeVoiceMonkeyApi(drinkWater)
     }
+    @Scheduled(cron = "0 0/20 * * * *")
+    public void MakeSureTurnoffAc(){
+        log.debug("Turn off AC")
+        apiInvoker.invokeVoiceMonkeyApi(turnOffAc)
+    }
 
-    @Scheduled(cron = "0 0 * * * *")
+    @Scheduled(cron = "15 0 0/2 * * *")
     public void turnOnAc(){
         log.debug("Turning on AC")
         apiInvoker.invokeVoiceMonkeyApi(turnOnAc)
@@ -331,23 +332,24 @@ class InvokeAlexaRoutineScheduler {
         if(availability == "available"){
             if(lastTimeTvStatus.getTvStatus()){
                 Duration durationFromLastTimeTvOn = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), LocalDateTime.now());
-                Duration tvCanOnAfterThisDuration = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), lastTimeTvStatus.getActivityTime().toLocalDateTime().plusMinutes(15))
-                int comparison = durationFromLastTimeTvOn <=> tvCanOnAfterThisDuration;
-                if(comparison > 0){
-                    if(!warnedBeforeTurnOffTv){
-                        warnedBeforeTurnOffTv = true
-                        log.debug("Give warning before turn off TV");
-                        apiInvoker.invokeApi(hallAnnouncement+ "Harsha it is already 15 minutes since you on the TV, will turn off the TV in next minute")
-                    }else{
-                        warnedBeforeTurnOffTv = false
-                        apiInvoker.invokeApi(turnOffEntertainment);
+                Duration announceAfterThisDuration = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), lastTimeTvStatus.getActivityTime().toLocalDateTime().plusMinutes(15))
+                Duration tvCanOnAfterThisDuration = Duration.between(lastTimeTvStatus.getActivityTime().toLocalDateTime(), lastTimeTvStatus.getActivityTime().toLocalDateTime().plusMinutes(30))
+                boolean turnOffTv = (durationFromLastTimeTvOn <=> tvCanOnAfterThisDuration) > 0;
+                boolean announce = (durationFromLastTimeTvOn <=> announceAfterThisDuration) > 0;
+                if(announce && notYetWarned){
+                    apiInvoker.invokeApi(hallAnnouncement+ "Harsha it is already 15 minutes since you on the TV")
+                    notYetWarned = false;
+                }
 
-                        TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
-                        tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
-                        tvOnOffEntity.setTvStatus(false);
-                        tvOnOffRepository.save(tvOnOffEntity);
-                        log.debug("Turning off TV");
-                    }
+                if(turnOffTv){
+                    apiInvoker.invokeApi(turnOffEntertainment);
+                    notYetWarned = true;
+                    TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
+                    tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
+                    tvOnOffEntity.setTvStatus(false);
+                    tvOnOffRepository.save(tvOnOffEntity);
+                    log.debug("Turning off TV");
+
                 }
             }
         }
@@ -399,8 +401,26 @@ class InvokeAlexaRoutineScheduler {
         }
     }
 
-    @Scheduled(cron = "15 0/20 0 * * *")
+    @Scheduled(cron = "15 0/5 * * * *")
     public void tryToKeepNgrokActive(){
         ngrokService.getNgrokUrl();
     }
+
+    //@Scheduled(cron = "0/30 * * * * *")
+    public void screenSaverForTv(){
+        List<String> stringsList = new ArrayList<>();
+        stringsList.add("0")
+
+        Random random = new Random();
+
+        // Generate a random index within the range of the list size
+        int randomIndex = random.nextInt(stringsList.size());
+
+        // Get the random string from the list
+        String randomString = stringsList.get(randomIndex);
+        log.debug("The image will show: https://api-v2.voicemonkey.io/announcement?token=aefdfde159807039f4c21fa0a5fe3680_811ba0df7e31c018095aa378843aceb5&device=monkey-conn-to-tv&image=https%3A%2F%2F16d4-2405-201-c018-4147-6025-a4e9-c5ca-ab95.ngrok-free.app%2Fmanage-photos%2Fphotos%2F"+ randomString)
+        apiInvoker.invokeVoiceMonkeyApi("https://api-v2.voicemonkey.io/announcement?token=aefdfde159807039f4c21fa0a5fe3680_811ba0df7e31c018095aa378843aceb5&device=monkey-conn-to-tv&image=https%3A%2F%2F16d4-2405-201-c018-4147-6025-a4e9-c5ca-ab95.ngrok-free.app%2Fmanage-photos%2Fphotos%2F"+ randomString);
+    }
+
+
 }
