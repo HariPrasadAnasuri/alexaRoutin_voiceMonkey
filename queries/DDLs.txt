@@ -1,0 +1,31 @@
+
+CREATE TABLE `gk_questions_with_images` (
+  `id` bigint(20) NOT NULL,
+  `answer_option` varchar(1) DEFAULT NULL,
+  `question_image_url` varchar(255) DEFAULT NULL,
+  `progress` bit(1) DEFAULT NULL,
+  `repeated_count` bigint(3) NOT NULL,
+  `question_text` varchar(10000) DEFAULT NULL,
+  `options` varchar(255) DEFAULT NULL,
+  `answer_text` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `personal`.`gk_questions_with_images_entity`
+(`id`,
+`answer_option`,
+`answer_text`,
+`options`,
+`progress`,
+`question_image_url`,
+`question_text`,
+`repeated_count`)
+VALUES
+(2,
+'b',
+'This is right answer',
+'Option a is right, option b is left, option C is up, option D is down',
+false,
+'https://lh3.googleusercontent.com/pw/AIL4fc-a36_r6_Khe9BIcCZepz-sm9m5zaBiVhCbp4NYmp9LOBiiVOtuN0RcyajxklydZS0puwHMFd7A5mToPrTYK05_qctJHu8wcCaLlN4zx3eR38ydVwOtWeCIrE09zzm5pAuYmsc5rKVd2DJyw-JH_5Vw=w2332-h1554-s-no?authuser=0',
+'Choose the right option, who is the finance minister of india',
+1);

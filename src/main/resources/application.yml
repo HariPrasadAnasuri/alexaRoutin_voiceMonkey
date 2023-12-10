@@ -4,6 +4,7 @@ server:
     context-path: /alexa-voice-monkey
 voiceMonkey:
   host: https://api.voicemonkey.io/trigger?access_token=aefdfde159807039f4c21fa0a5fe3680&secret_token=811ba0df7e31c018095aa378843aceb5
+  hostForImagesOrVideo: https://api-v2.voicemonkey.io/announcement?token=aefdfde159807039f4c21fa0a5fe3680_811ba0df7e31c018095aa378843aceb5&device=monkey-conn-to-tv
   fan:
     turnOnOrOff: ${voiceMonkey.host}&monkey=turn-on-fan-monkey&announcement=test
   entertainment:

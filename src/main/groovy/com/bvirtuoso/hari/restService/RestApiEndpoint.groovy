@@ -11,6 +11,7 @@ import com.bvirtuoso.hari.repository.CapitalRepository
 import com.bvirtuoso.hari.repository.CountryRepository
 import com.bvirtuoso.hari.repository.GkQuestionRepository
 import com.bvirtuoso.hari.repository.MemberRepository
+import com.bvirtuoso.hari.repository.PersonAvailabilityRepository
 import com.bvirtuoso.hari.repository.TvOnOffRepository
 import com.bvirtuoso.hari.service.NgrokService
 import org.apache.juli.logging.Log
@@ -53,6 +54,7 @@ class RestApiEndpoint {
     private final TvOnOffRepository tvOnOffRepository
     private final CountryRepository countryRepository
     private final CapitalRepository capitalRepository
+    private final PersonAvailabilityRepository personAvailabilityRepository
     private final NgrokService ngrokService
 
     private boolean isPleaseWalkAnnounced = false
@@ -64,7 +66,7 @@ class RestApiEndpoint {
                            CountryRepository countryRepository,
                            CapitalRepository capitalRepository,
                            GkQuestionRepository gkQuestionRepository,
-                           NgrokService ngrokService
+                           NgrokService ngrokService, PersonAvailabilityRepository personAvailabilityRepository
     ){
         log.debug("Scheduler initialized")
         this.restTemplate = restTemplate
@@ -74,13 +76,14 @@ class RestApiEndpoint {
         this.countryRepository = countryRepository
         this.capitalRepository = capitalRepository
         this.gkQuestionRepository = gkQuestionRepository
+        this.personAvailabilityRepository = personAvailabilityRepository
         this.ngrokService = ngrokService
 
         ngrokUrl = ngrokService.getNgrokUrl();
         if(ngrokUrl){
             log.debug("ngrok URL fetched: ${ngrokUrl}")
         }else{
-
+            log.debug("Not found ngrok url")
         }
 
         /*def responseFromLambda = apiInvoker.setNgrokUrlToLambdaFunction(
@@ -91,13 +94,19 @@ class RestApiEndpoint {
     @GetMapping("/setHarshaAvailability")
     @ResponseBody
     public void setHarshaAvailability(@RequestParam String availability){
-        harshaAvailable = availability.toLowerCase();
+        //harshaAvailable = availability.toLowerCase();
+        updatePersonAvailability(availability.toLowerCase())
     }
 
     @GetMapping("/getHarshaAvailability")
     @ResponseBody
     public String getHarshaAvailability(){
-        return harshaAvailable;
+        //return harshaAvailable;
+        PersonAvailabilityEntity personAvailability = personAvailabilityRepository.getLastRow()
+        if(personAvailability){
+            return personAvailability.getAvailability().toLowerCase()
+        }
+        return "";
     }
 
     @GetMapping("/addPeopleWeight")
@@ -200,12 +209,7 @@ class RestApiEndpoint {
                 int comparison = durationFromLastTimeTvOn <=> tvCanOnAfterThisDuration;
                 if(comparison > 0){
                     apiInvoker.invokeApi(turnOnEntertainment);
-                    TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
-                    tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
-                    tvOnOffEntity.setTvStatus(true);
-                    deleteIfRowsExceeded();
-                    tvOnOffRepository.save(tvOnOffEntity);
-                    log.debug("Turning on TV");
+                    updateTvStatus(true)
                 }else{
                     apiInvoker.invokeApi(hallAnnouncement+ "5 minutes wait cheyyara... hihi")
                     log.debug("Giving please wait message to turn on tv until 5 minutes");
@@ -214,20 +218,32 @@ class RestApiEndpoint {
             }
         }else{
             apiInvoker.invokeApi(turnOnEntertainment);
+            updateTvStatus(true)
         }
 
+    }
+
+    private updateTvStatus(boolean status){
+        TvOnOffEntity tvOnOffEntity = new TvOnOffEntity()
+        tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()))
+        tvOnOffEntity.setTvStatus(status)
+        deleteIfRowsExceeded()
+        tvOnOffRepository.save(tvOnOffEntity)
+        log.debug("Turning "+ status ? "On" : "Off")
+    }
+    private updatePersonAvailability(String availability){
+        PersonAvailabilityEntity personAvailability = new PersonAvailabilityEntity()
+        personAvailability.setActivityTime(Timestamp.valueOf(LocalDateTime.now()))
+        personAvailability.setAvailability(availability)
+        log.debug("Person availability: "+ availability)
+        personAvailabilityRepository.save(personAvailability)
     }
 
     @GetMapping("/tvOff")
     @ResponseBody
     public void tvOff(HttpServletRequest request) {
         apiInvoker.invokeApi(turnOffEntertainment);
-        TvOnOffEntity lastTimeTvStatus = tvOnOffRepository.getLastRow()
-        TvOnOffEntity tvOnOffEntity = new TvOnOffEntity();
-        tvOnOffEntity.setActivityTime(Timestamp.valueOf(LocalDateTime.now()));
-        tvOnOffEntity.setTvStatus(false);
-        deleteIfRowsExceeded();
-        tvOnOffRepository.save(tvOnOffEntity);
+        updateTvStatus(false)
     }
 
     @GetMapping("/tvOnOrOffDuration")

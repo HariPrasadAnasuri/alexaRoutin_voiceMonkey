@@ -6,11 +6,15 @@ import com.bvirtuoso.hari.model.HariSchedule
 import com.bvirtuoso.hari.model.PersonInfo
 import com.bvirtuoso.hari.model.PersonalSchedule
 import com.bvirtuoso.hari.model.jpa.DishInfoJpa
+import com.bvirtuoso.hari.model.jpa.GkQuestionsWithImagesEntity
 import com.bvirtuoso.hari.model.jpa.HealthInfoJpa
+import com.bvirtuoso.hari.model.jpa.PersonAvailabilityEntity
 import com.bvirtuoso.hari.model.jpa.TvOnOffEntity
 import com.bvirtuoso.hari.repository.DishInfoRepository
 import com.bvirtuoso.hari.repository.HealthInfoRepository
+import com.bvirtuoso.hari.repository.PersonAvailabilityRepository
 import com.bvirtuoso.hari.repository.TvOnOffRepository
+import com.bvirtuoso.hari.restService.GkQuestionsWithImagesController
 import com.bvirtuoso.hari.restService.RestApiEndpoint
 import com.bvirtuoso.hari.service.MotionBasedTask
 import com.bvirtuoso.hari.service.NgrokService
@@ -42,10 +46,13 @@ class InvokeAlexaRoutineScheduler {
     final private RestTemplate restTemplate
     private final ApiInvoker apiInvoker
     private final TvOnOffRepository tvOnOffRepository
+    private final PersonAvailabilityRepository personAvailabilityRepository
     private final NgrokService ngrokService
 
     final private RestApiEndpoint restApiEndpoint
+    final private GkQuestionsWithImagesController gkQuestionsWithImagesController
 
+    @Value("\${voiceMonkey.hostForImagesOrVideo}") String hostForImagesOrVideo
     @Value("\${voiceMonkey.fan.turnOnOrOff}") String turnOnOrOffFanUrl
     @Value("\${voiceMonkey.entertainment.turnOff}") String turnOffEntertainment
     @Value("\${voiceMonkey.entertainment.turnOn}") String turnOnEntertainment
@@ -91,7 +98,11 @@ class InvokeAlexaRoutineScheduler {
                                         HealthInfoRepository healthInfoRepository,
                                        @Value("\${voiceMonkey.hariAnnouncement}") String hariAnnouncement,
                                        final RestApiEndpoint restApiEndpoint, final TvOnOffRepository tvOnOffRepository,
-                                       final NgrokService ngrokService){
+                                       final PersonAvailabilityRepository personAvailabilityRepository,
+                                       final NgrokService ngrokService,
+                                       final GkQuestionsWithImagesController gkQuestionsWithImagesController
+
+    ){
         log.debug("Scheduler initialized")
         this.restTemplate = restTemplate
         this.apiInvoker = apiInvoker
@@ -101,8 +112,9 @@ class InvokeAlexaRoutineScheduler {
         this.apiInvoker.invokeVoiceMonkeyApi(hariAnnouncement + "Hey hari, application is deployed")
         this.restApiEndpoint = restApiEndpoint
         this.tvOnOffRepository = tvOnOffRepository
+        this.personAvailabilityRepository = personAvailabilityRepository
         this.ngrokService = ngrokService
-
+        this.gkQuestionsWithImagesController = gkQuestionsWithImagesController;
 
     }
 
@@ -325,7 +337,7 @@ class InvokeAlexaRoutineScheduler {
         }
     }
 
-    @Scheduled(cron = "0 0/1 * * * *")
+    //@Scheduled(cron = "0 0/1 * * * *")
     public void tvOnOrOff(){
         TvOnOffEntity lastTimeTvStatus = tvOnOffRepository.getLastRow()
         String availability = restApiEndpoint.getHarshaAvailability()
@@ -420,6 +432,25 @@ class InvokeAlexaRoutineScheduler {
         String randomString = stringsList.get(randomIndex);
         log.debug("The image will show: https://api-v2.voicemonkey.io/announcement?token=aefdfde159807039f4c21fa0a5fe3680_811ba0df7e31c018095aa378843aceb5&device=monkey-conn-to-tv&image=https%3A%2F%2F16d4-2405-201-c018-4147-6025-a4e9-c5ca-ab95.ngrok-free.app%2Fmanage-photos%2Fphotos%2F"+ randomString)
         apiInvoker.invokeVoiceMonkeyApi("https://api-v2.voicemonkey.io/announcement?token=aefdfde159807039f4c21fa0a5fe3680_811ba0df7e31c018095aa378843aceb5&device=monkey-conn-to-tv&image=https%3A%2F%2F16d4-2405-201-c018-4147-6025-a4e9-c5ca-ab95.ngrok-free.app%2Fmanage-photos%2Fphotos%2F"+ randomString);
+    }
+
+    @Scheduled(cron = "0 0/1 * * * *")
+    void askGkQuestionWithImage(){
+        log.debug("askGkQuestionWithImage")
+        TvOnOffEntity lastTimeTvStatus = tvOnOffRepository.getLastRow()
+        PersonAvailabilityEntity personAvailability = personAvailabilityRepository.getLastRow()
+        if((personAvailability != null) && (personAvailability.getAvailability().toLowerCase() == "available")) {
+            if (lastTimeTvStatus.getTvStatus()) {
+                GkQuestionsWithImagesEntity gkQuestionsWithImagesEntity = gkQuestionsWithImagesController.getNextQuestion();
+                if(gkQuestionsWithImagesEntity) {
+                    apiInvoker.invokeVoiceMonkeyApi("${hostForImagesOrVideo}&image=${gkQuestionsWithImagesEntity.getQuestionImageUrl()}");
+                    Thread.sleep(3000)
+                    apiInvoker.invokeVoiceMonkeyApi(hallAnnouncement + gkQuestionsWithImagesEntity.getQuestionText())
+                    Thread.sleep((0.08 * 1000) * gkQuestionsWithImagesEntity.getQuestionText().length().toInteger() as long)
+                    apiInvoker.invokeVoiceMonkeyApi(hallAnnouncement + gkQuestionsWithImagesEntity.getOptions())
+                }
+            }
+        }
     }
 
 
